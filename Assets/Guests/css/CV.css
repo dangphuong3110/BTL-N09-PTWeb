@@ -1,9 +1,4 @@
 /* NAVBAR  */
-.navbar .container{
-    margin: 0 174px;
-    padding: 0 15px;
-}
-
 .navbar.navbar-transparent{
     background-color: transparent !important;
     box-shadow: none;
