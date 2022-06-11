@@ -1,9 +1,20 @@
-/* NAVBAR  */
-.navbar .container{
-    margin: 0 174px;
-    padding: 0 15px;
+body{
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: montserrat,helvetica neue,Arial,sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #378c3f;
+}
+
+p{
+    line-height: 1.61em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/* NAVBAR  */
 .navbar.navbar-transparent{
     background-color: transparent !important;
     box-shadow: none;
@@ -93,22 +104,6 @@ nav ul li a:visited{
 }
 
 /* HOME */
-.overlay::before{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.overlay::before,
-.overlay::after{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    left: 0;
-    top: 0;
-    content: '';
-}
-
 .bg-cover{
     background-position: center !important;
     background-size: cover !important;
@@ -116,7 +111,7 @@ nav ul li a:visited{
 }
 
 .home{
-    background: linear-gradient(to top, rgba(44,44,44,0.2),rgba(55,140,63,0.6)), url(/Assets/Images/hero-img.jpg);
+    background-image: url(/Assets/Images/hero-img.jpg);
     min-height: 77vh;
 }
 
@@ -176,6 +171,7 @@ nav ul li a:visited{
 .home .container .btn{
     width: 140px;
 }
+
 .btn{
     border-width: 2px;
     font-weight: 400;
@@ -190,3 +186,96 @@ nav ul li a:visited{
 .btn.btn-success:hover{
     background-color: #51bb5c;
 }
+
+.profile-page .button-container{
+    text-align: center;
+    margin-top: -30px;
+}
+
+.button-container i{
+    height: 25px;
+    width: 25px;
+    color: #fff;
+}
+
+.button-container a{
+    background-color: #888;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.button-container a:hover{
+    background-color: rgba(136, 136, 136,0.8)
+}
+
+.button-container .btn-default{
+    margin-right: 6px;
+}
+
+.btn-icon.btn-lg{
+    height: 3.6rem;
+    min-width: 3.6rem;
+    width: 3.6rem;
+}
+
+.btn-icon{
+    padding: 0;
+    font-size: 0.9375rem;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+}
+
+.btn-round{
+    border-width: 1px;
+    border-radius: 30px !important;
+}
+
+/* ABOUT */
+.card{
+    padding: 8px 0;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+}
+
+section{
+    padding: 45px 0;
+    position: relative;
+    background: #fff;
+    padding-bottom: 0 !important;
+}
+
+.title{
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h4{
+    font-size: 1.714em;
+    line-height: 1.45em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.card .card-body{
+    min-height: 190px;
+}
+
+strong{
+    font-weight: bolder !important;
+}
+
+
+
+
+
+
+
+
+
