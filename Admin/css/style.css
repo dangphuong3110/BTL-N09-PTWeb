@@ -1,9 +1,9 @@
-col.l-2.m-3{
+/* col.l-2.m-3{
     background-color: lightblue;
     text-align: center;
     color: red;
     padding-bottom: 785px;
-}
+} */
 
 .dropdown-item{
     background-color: lightblue;
@@ -46,4 +46,3 @@ col.l-2.m-3{
     width: 365px;
     margin-top: 30px;
 }
-
