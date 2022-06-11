@@ -1,16 +1,15 @@
 body {
+    position: relative;
     font-size: 20px !important;
     height: 2000px;
 }
 
-.position-fixed {
-    width: 100%;
-
-}
 
 .navbar {
     box-shadow: 0 6px 10px rgba(177, 172, 172, 0.5);
     background-color: rgb(0, 255, 255) !important;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -44,6 +43,10 @@ body {
 }
 
 /* Slider */
-.slider1 {
-    margin: 60px;
+.carousel {
+    margin-top: 60px;
+}
+
+.slider__img {
+    height: 500px;
 }
