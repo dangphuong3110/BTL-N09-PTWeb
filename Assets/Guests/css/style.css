@@ -1,0 +1,60 @@
+body {}
+
+.main {
+    position: relative;
+    font-size: 20px !important;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    box-shadow: 0 6px 10px rgba(177, 172, 172, 0.5);
+    background-color: rgb(0, 255, 255) !important;
+
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #ff4d29;
+}
+
+.logo {
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: rgb(238, 121, 54);
+}
+
+/* BTN */
+.btn-brand {
+    width: 150px;
+    background-color: rgb(238, 121, 54);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-brand:hover {
+    background-color: rgb(210, 105, 44);
+    color: white;
+    width: 150px;
+}
+
+/* Slider */
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.slider1 {
+    background: linear-gradient(rgba(108, 89, 183, 0.3), rgba(130, 118, 203, 0.4)), url(../images/picture2.jpg  );
+}
+
+.title {
+    color: white !important;
+    font-size: 30px !important;
+}
