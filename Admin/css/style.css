@@ -1,4 +1,4 @@
-.col.l-2.m-3{
+col.l-2.m-3{
     background-color: lightblue;
     text-align: center;
     color: red;
@@ -19,4 +19,31 @@
     border: 0;
     font-size: 100%;
 }
-  
+
+.top{
+    padding-left: 50px;
+    font-size: 60px;
+}
+
+.add{
+    color: orange;
+    font-size: 70px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.nav-item{
+    font-size: 25px;
+}
+
+.container-fluid{
+    margin-left: 10px;
+}
+
+.btn.btn-warning{
+    width: 365px;
+    margin-top: 30px;
+}
+
