@@ -241,7 +241,7 @@ nav ul li a:visited{
 }
 
 section{
-    padding: 45px 0;
+    padding: 70px 0;
     position: relative;
     background: #fff;
     padding-bottom: 0 !important;
@@ -269,6 +269,48 @@ h4{
 
 strong{
     font-weight: bolder !important;
+}
+
+/* SKILLS */
+#skills{
+    margin-top: 25px;
+}
+
+.progress-container{
+  margin-bottom: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+.progress-container.progress-primary .progress-value,
+.progress-container.progress-primary .progress-badge{
+  color: #378c3f;
+}
+
+.progress-container .progress-badge {
+  font-size: .8571em;
+  text-transform: uppercase;
+}
+
+.progress-container.progress-primary .progress{
+  background: rgba(55,140,63,0.4);
+  height: 5px;
+  font-size: 18px;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 14px;
+}
+
+.progress-container .progress .progress-value{
+    position: absolute;
+    top: 2px;
+    right:0;
+    font-size: 0.85em;
+}
+
+.progress-container.progress-primary .progress-bar{
+    background: #378c3f;
+    box-shadow: none;
 }
 
 
