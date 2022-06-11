@@ -1,15 +1,17 @@
-body {
+body {}
+
+.main {
     position: relative;
     font-size: 20px !important;
-    height: 2000px;
 }
 
-
 .navbar {
-    box-shadow: 0 6px 10px rgba(177, 172, 172, 0.5);
-    background-color: rgb(0, 255, 255) !important;
     position: fixed;
     width: 100%;
+    margin-top: 0;
+    box-shadow: 0 6px 10px rgba(177, 172, 172, 0.5);
+    background-color: rgb(0, 255, 255) !important;
+
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -43,10 +45,16 @@ body {
 }
 
 /* Slider */
-.carousel {
-    margin-top: 60px;
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
 }
 
-.slider__img {
-    height: 500px;
+.slider1 {
+    background: linear-gradient(rgba(108, 89, 183, 0.3), rgba(130, 118, 203, 0.4)), url(../images/picture2.jpg  );
+}
+
+.title {
+    color: white !important;
+    font-size: 30px !important;
 }
