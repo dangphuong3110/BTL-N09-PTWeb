@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <!-- CSS only -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./Assets/Libraries/css/bootstrap.css">
-    <link rel="stylesheet" href="./Assets/Libraries/css/boxicons.min.css">
     <link rel="stylesheet" href="./Assets/Libraries/css/reset.css">
     <link rel="stylesheet" href="./Assets/Libraries/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./Assets/Libraries/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./Assets/Guests/css/homepage.css">
+    <link rel="stylesheet" href="./Assets/Fonts/themify-icons/themify-icons.css">
 </head>
 
 <body>
@@ -54,26 +54,26 @@
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./Assets/Images/hieu.jpg " class="d-block w-100 h-100 img__member" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-inner justify-content-between">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./Assets/Images/hieu.jpg " class="d-block w-100 h-100 img__slider" alt="...">
+                    <div class="carousel-caption d-block">
                         <p class="h1 text-uppercase">Welcome to Project_N9</p>
                         <p class="h3 my-3">Member 1</p>
                         <p class="h4">Nguyễn Đăng Phương</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./Assets/Images/hero-img.jpg " class="d-block w-100 h-100 img__member" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Assets/Images/hero-img.jpg " class="d-block w-100 h-100 img__slider" alt="...">
+                    <div class="carousel-caption d-block">
                         <p class="h1 text-uppercase">Welcome to Project_N9</p>
                         <p class="h3 my-3">Member 2</p>
                         <p class="h4">Nguyễn Văn Hiếu</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./Assets/Images/hero-img.jpg " class="d-block w-100 h-100 img__member" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Assets/Images/hero-img.jpg " class="d-block w-100 h-100 img__slider" alt="...">
+                    <div class="carousel-caption d-block">
                         <p class="h1 text-uppercase">Welcome to Project_N9</p>
                         <p class="h3 my-3">Member 3</p>
                         <p class="h4">Nguyễn Quang Thái</p>
@@ -91,13 +91,76 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-
-        <!-- JavaScript Bundle with Popper -->
-        <script src="./Assets/Libraries/js/bootstrap.bundle.js"></script>
-        <script src="./Assets/Libraries/js/jqeuery.js"></script>
-        <script src="./Assets/Libraries/js/owl.carousel.min.js"></script>
-        <script src="./Assets/Guests/js/homepage.js"></script>
+    </div>
+    <!-- Member -->
+    <div id="member" class="my-3">
+        <div class="container">
+            <div class="row ">
+                <h1 class="h1 member-header text-dark my-3">Member</h1>
+            </div>
+            <div class="row justify-content-around py-5">
+                <div class="col-sm-3 my-2 bg-light page--CV">
+                    <div class="contact__input" data-aos="flip-left" data-aos-duration="600" data-aos-delay="300"
+                        data-aos-easing=ease-in-out>
+                        <a class="member-link" href="./Assets/guest/html/CV_Vuong.html">
+                            <div class="member-piece">
+                                <h4 class="text-center">
+                                    <i class="ti-pin2"></i>
+                                </h4>
+                                <h4 class="text-center">Name: Nguyễn Quang Thái</h4>
+                                <h5 class="text-center">Student ID: 2051063464</h5>
+                                <div class="image">
+                                    <img src="./Assets/Images/thai.jpg" alt="Placeholder"
+                                        class="img__member py-3 text-center" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 my-2 bg-light page--CV">
+                    <div class="contact__input" data-aos="flip-left" data-aos-duration="600" data-aos-delay="300"
+                        data-aos-easing=ease-in-out>
+                        <a class="member-link" href="./Assets/guest/html/CV_Vuong.html">
+                            <div class="member-piece">
+                                <h4 class="text-center">
+                                    <i class="ti-pin2"></i>
+                                </h4>
+                                <h4 class="text-center">Name: Nguyễn Đăng Phương</h4>
+                                <h5 class="text-center">Student ID: 2051063464</h5>
+                                <div class="image">
+                                    <img src="./Assets/Images/thai.jpg" alt="Placeholder"
+                                        class="img__member py-3 text-center" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3 my-2 bg-light page--CV">
+                    <div class="contact__input" data-aos="flip-left" data-aos-duration="600" data-aos-delay="300"
+                        data-aos-easing=ease-in-out>
+                        <a class="member-link" href="./Assets/guest/html/CV_Vuong.html">
+                            <div class="member-piece">
+                                <h4 class="text-center">
+                                    <i class="ti-pin2"></i>
+                                </h4>
+                                <h4 class="text-center">Name: Nguyễn Văn Hiếu</h4>
+                                <h5 class="text-center">Student ID: 2051063464</h5>
+                                <div class="image">
+                                    <img src="./Assets/Images/thai.jpg" alt="Placeholder"
+                                        class="img__member py-3 text-center" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JavaScript -->
+    <script src="./Assets/Libraries/js/bootstrap.bundle.js"></script>
+    <script src="./Assets/Libraries/js/jqeuery.js"></script>
+    <script src="./Assets/Libraries/js/owl.carousel.min.js"></script>
+    <script src="./Assets/Guests/js/homepage.js"></script>
 </body>
 
 </html>

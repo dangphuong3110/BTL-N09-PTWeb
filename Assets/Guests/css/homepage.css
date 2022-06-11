@@ -5,6 +5,14 @@ body {
     color: white !important;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
 
 .navbar {
     position: fixed;
@@ -54,6 +62,25 @@ body {
     color: white;
 }
 
-#home .img__member {
+#home .img__slider {
     height: 400px !important;
+}
+
+/* Member */
+#member {
+    background-color: rgb(221, 216, 216);
+}
+
+#member .img__member {
+    width: 216 px;
+    height: 200px;
+    text-align: center;
+}
+
+.page--CV {
+    box-shadow: 0 6px 10px rgba(63, 62, 62, 0.5);
+}
+
+.image {
+    text-align: center;
 }
