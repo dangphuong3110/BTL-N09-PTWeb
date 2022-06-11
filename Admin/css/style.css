@@ -28,6 +28,7 @@
 .add{
     color: orange;
     font-size: 70px;
+    
 }
 
 .navbar-brand{
@@ -45,4 +46,23 @@
 .btn.btn-warning{
     width: 365px;
     margin-top: 30px;
+    border-radius: 8px;
+}
+
+.btn.btn-danger{
+   
+    border-radius: 8px;
+}
+
+.offcanvas-title{
+    font-size: 50px;
+}
+
+.offcanvas-body{
+    font-size: 30px;
+}
+
+.table{
+  margin-top: 30px;
+  
 }
