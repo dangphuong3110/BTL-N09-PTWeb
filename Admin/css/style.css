@@ -1,0 +1,22 @@
+.col.l-2.m-3{
+    background-color: lightblue;
+    text-align: center;
+    color: red;
+    padding-bottom: 785px;
+}
+
+.dropdown-item{
+    background-color: lightblue;
+}
+
+.offcanvas{
+    background-color: cyan;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+  
