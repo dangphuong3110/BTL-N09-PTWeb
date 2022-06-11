@@ -1,0 +1,49 @@
+body {
+    font-size: 20px !important;
+    height: 2000px;
+}
+
+.position-fixed {
+    width: 100%;
+
+}
+
+.navbar {
+    box-shadow: 0 6px 10px rgba(177, 172, 172, 0.5);
+    background-color: rgb(0, 255, 255) !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #ff4d29;
+}
+
+.logo {
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: rgb(238, 121, 54);
+}
+
+/* BTN */
+.btn-brand {
+    width: 150px;
+    background-color: rgb(238, 121, 54);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-brand:hover {
+    background-color: rgb(210, 105, 44);
+    color: white;
+    width: 150px;
+}
+
+/* Slider */
+.slider1 {
+    margin: 60px;
+}
