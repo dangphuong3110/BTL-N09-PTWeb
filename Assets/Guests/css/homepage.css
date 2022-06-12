@@ -1,7 +1,6 @@
 body {
     position: relative;
-    font-size: 20px !important;
-    height: 2000px;
+    font-size: 16px !important;
     color: white !important;
 }
 
@@ -19,7 +18,7 @@ a:hover {
     width: 100%;
     margin-top: 0;
     box-shadow: 0 6px 10px rgba(177, 172, 172, 0.5);
-    background-color: rgb(0, 255, 255) !important;
+    background-color: #378c3f !important;
 
 }
 
@@ -91,7 +90,7 @@ a:hover {
 }
 
 /* Member icons (facebook, instagram, github) */
-/* Change icon-pin */
+
 .image {
     width: 70%;
     margin: auto;
@@ -109,7 +108,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 168px;
-    background-color: rgb(255, 77, 41, 0.89);
+    background-color: rgba(55, 140, 63, 0.8);
     transition: all 0.4s ease;
     opacity: 0;
 }
@@ -137,6 +136,40 @@ a:hover {
 
 .numberphone:hover {
     color: #ff4d29 !important;
+}
+
+/* Partner */
+.partner-img {
+    width: 100%;
+    height: 300px;
+}
+
+
+/* About */
+#about {
+    background-color: rgb(221, 216, 216);
+}
+
+/* footer */
+#footer {
+    background-color: rgba(55, 140, 63, 0.8) !important;
+}
+
+#footer .footer__icon i {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+#footer .footer__icon .ti-facebook:hover {
+    color: #3B5998;
+}
+
+#footer .footer__icon .ti-twitter-alt:hover {
+    color: #1DA1F2;
+}
+
+#footer .footer__icon .ti-youtube:hover {
+    color: #EA4335;
 }
 
 /* responsive */
