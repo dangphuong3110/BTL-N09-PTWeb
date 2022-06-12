@@ -67,6 +67,7 @@ a:hover {
 }
 
 /* Member */
+
 #member {
     background-color: rgb(221, 216, 216);
 }
@@ -79,6 +80,8 @@ a:hover {
 
 .page--CV {
     box-shadow: 0 6px 10px rgba(63, 62, 62, 0.5);
+    border-radius: 3%;
+    height: 350px;
 }
 
 .image {
@@ -88,8 +91,10 @@ a:hover {
 }
 
 /* Member icons (facebook, instagram, github) */
+/* Change icon-pin */
 .image {
-    text-align: center;
+    width: 60%;
+    margin: auto;
 }
 
 .image .img-wrapper {
