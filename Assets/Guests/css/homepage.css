@@ -133,11 +133,23 @@ a:hover {
     top: 50%;
 }
 
+/* Hotline */
+
+.numberphone:hover {
+    color: #ff4d29 !important;
+}
 
 /* responsive */
 @media (max-width: 992px) {
     .image {
-        width: 40%;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        width: 50%;
         margin: auto;
     }
 }

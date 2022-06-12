@@ -18,35 +18,40 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container justify-content-between">
-            <a class="navbar-brand logo" href="#">
-                CREATIVE
-                <span>CV</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#member">Member</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-                <a class="btn btn-brand ms-lg-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+    <!-- Header and Navbar -->
+    <section id="header">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container justify-content-between">
+                <a class="navbar-brand logo" href="#">
+                    CREATIVE
+                    <span>CV</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#member">Member</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hotline">Hotline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-brand ms-lg-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
     <!-- Slider -->
-    <div id="home">
+    <section id="home">
         <div id="carouselExampleDark" class="carousel carousel-dark slide slide-hero" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -93,12 +98,12 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </section>
     <!-- Member -->
-    <div id="member" class="my-3">
+    <section id="member" class="my-3">
         <div class="container">
             <div class="row ">
-                <h1 class="h1 member-header text-dark my-3">Member</h1>
+                <h1 class="h3 member-header text-dark my-3">Member</h1>
             </div>
             <div class="row justify-content-around py-5">
                 <div class="col-lg-3 my-2">
@@ -107,7 +112,7 @@
                         <a class="member-link" href="#">
                             <div class="member-piece">
                                 <h4 class="text-center py-3">
-                                    <i class="ti-pin2 icon--pin"></i>
+                                    <i class="ti-pin icon--pin text-success"></i>
                                 </h4>
                                 <h4 class="text-center">Name: Nguyễn Quang Thái</h4>
                                 <h5 class="text-center">Student ID: 2051063464</h5>
@@ -134,7 +139,7 @@
                         <a class="member-link" href="#">
                             <div class="member-piece">
                                 <h4 class="text-center py-3">
-                                    <i class="ti-pin2 icon--pin"></i>
+                                    <i class="ti-pin icon--pin text-primary"></i>
                                 </h4>
                                 <h4 class="text-center">Name: Nguyễn Đăng Phương</h4>
                                 <h5 class="text-center">Student ID: 2051063453</h5>
@@ -159,7 +164,7 @@
                         <a class="member-link" href="#">
                             <div class="member-piece">
                                 <h4 class="text-center py-3">
-                                    <i class="ti-pin2 icon--pin"></i>
+                                    <i class="ti-pin icon--pin text-warning"></i>
                                 </h4>
                                 <h4 class="text-center">Name: Nguyễn Văn Hiếu</h4>
                                 <h5 class="text-center">Student ID: 2051063464</h5>
@@ -180,7 +185,49 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Hotline -->
+    <section id="hotline" class="my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <h1 class="h3 member-header text-dark my-3">Hotline</h1>
+                    </div>
+                    <div class="row text-dark">
+                        <p class="h5 mb-2">Hotline tư vấn:</p>
+                        <p class="hotline__member my-1">
+                            <i class="ti-mobile"> </i>
+                            <a href="#" class="numberphone">0329603280</a>
+                            <span>- Nguyễn Đăng Phương</span>
+                        </p>
+                        <p class="hotline__member my-1">
+                            <i class="ti-mobile"> </i>
+                            <a href="#" class="numberphone">0343282228</a>
+                            <span>- Nguyễn Quang Thái</span>
+                        </p>
+                        <p class="hotline__member my-1">
+                            <i class="ti-mobile"> </i>
+                            <a href="#" class="numberphone">0973513198</a>
+                            <span>- Nguyễn Văn Hiếu</span>
+                        </p>
+                    </div>
+                    <div class="row text-dark mt-5">
+                        <p>
+                            <i class="ti-pencil-alt2"> </i>
+                            Hãy liên hệ ngay với chúng tôi khi bạn cần. Chúng tôi luôn đồng hành cùng bạn trên con đường
+                            tương lai. Cảm ơn bạn và chúc bạn có một buổi làm việc vui vẻ
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-5">
+                    <h1 class="h3 member-header text-dark my-3">Partner</h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--JavaScript -->
     <script>
         AOS.init({
