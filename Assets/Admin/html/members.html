@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../Libraries/css/aos.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/reset.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="col-md-8">
+        <h1 class="top">
+          Curriculum Vitae For Admin
+          <span class = "add">.</span>
+        </h1>
+
+      </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../../CV.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/admin.html">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-danger me-md-2" type="button">Settings</button>
+              <button class="btn btn-danger" type="button">LogOut</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="image">
+        <img src="../../Images/hero-img.jpg" alt="">
+      </div>
+      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Option</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Hello Admin!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Select your Option!</p>
+            <a type="button" class="btn btn-warning" href="#">Add Members</a>
+            <a type="button" class="btn btn-warning">Posts</a>
+            <a type="button" class="btn btn-warning">CV Management</a>
+            <a type="button" class="btn btn-warning">About Us</a>
+          </div>
+        </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <table class="table">
+        <thead>
+          <tr class="top__table">
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+            <th scope="col">Task</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">01</th>
+            <td>Nguyễn Văn Hiếu</td>
+            <td>Admin</td>
+            <td>
+              <button type="button" class="btn btn-info">Edit</button>
+              <button type="button" class="btn btn-danger">Del</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">02</th>
+            <td>Nguyễn Đăng Phương</td>
+            <td>Admin</td>
+            <td> 
+              <button type="button" class="btn btn-info">Edit</button>
+              <button type="button" class="btn btn-danger">Del</button></td>
+          </tr>
+          <tr>
+            <th scope="row">03</th>
+            <td>Nguyễn Quang Thái</td>
+            <td>Admin</td>
+            <td>
+              <button type="button" class="btn btn-info">Edit</button>
+              <button type="button" class="btn btn-danger">Del</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  <script src="../js/admin.js"></script>
+  <script src="../../Libraries/js/aos.js"></script>
+  <script src="../../Libraries/js/bootstrap.bundle.js"></script>
+  <script src="../../Libraries/js/jqeuery.js"></script>\
+  <script src="../../Libraries/js/owl.carousel.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>

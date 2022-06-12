@@ -1,10 +1,10 @@
-$(document).ready(function(){
-    $(window).bind('scroll', function(){
+$(document).ready(function () {
+    $(window).bind('scroll', function () {
         var gap = 400;
-        if($(window).scrollTop() > gap){
+        if ($(window).scrollTop() > gap) {
             $('nav').removeClass('navbar-transparent');
         }
-        else{
+        else {
             $('nav').addClass('navbar-transparent');
         }
     })
