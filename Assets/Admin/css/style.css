@@ -36,10 +36,15 @@
 
 .navbar-brand{
     font-size: 25px;
+    color: white;
 }
 
 .nav-item{
     font-size: 25px;
+}
+
+.nav-link{
+    color: white;
 }
 
 .container-fluid{
