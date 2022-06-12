@@ -72,7 +72,7 @@ a:hover {
 }
 
 #member .img__member {
-    width: 216 px;
+    width: 100%;
     height: 200px;
     text-align: center;
 }
@@ -83,4 +83,47 @@ a:hover {
 
 .image {
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Member icons (facebook, instagram, github) */
+.image {
+    text-align: center;
+}
+
+.image .img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.image .overlay {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 168px;
+    background-color: rgb(255, 77, 41, 0.89);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.image .social-links {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+    top: 16px;
+}
+
+.image:hover .social-links {
+    opacity: 1;
+    top: 50%;
 }
