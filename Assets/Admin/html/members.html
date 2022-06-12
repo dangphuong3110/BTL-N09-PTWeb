@@ -7,10 +7,10 @@
     <title>Admin</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../Assets/Libraries/css/boxicons.min.css">
-    <link rel="stylesheet" href="../Assets/Libraries/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../Assets/Libraries/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../Assets/Libraries/css/reset.css">
+    <link rel="stylesheet" href="../../Libraries/css/aos.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/reset.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-info">
@@ -47,6 +47,9 @@
         </div>
       </nav>
 
+      <div class="image">
+        <img src="../../Images/hero-img.jpg" alt="">
+      </div>
       <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Option</button>
 
       <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -56,47 +59,58 @@
         </div>
         <div class="offcanvas-body">
           <p>Select your option</p>
-          <a type="button" class="btn btn-warning" href="../../../CV.html">Home</a>
-          <a type="button" class="btn btn-warning">Add CV</a>
-          <a type="button" class="btn btn-warning">Delete CV</a>
+          <a type="button" class="btn btn-warning">Add Members</a>
+          <a type="button" class="btn btn-warning">Posts</a>
           <a type="button" class="btn btn-warning">CV Management</a>
           <a type="button" class="btn btn-warning">About Us</a>
         </div>
       </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
       <table class="table">
         <thead>
-          <tr>
-            <th scope="col"></th>
+          <tr class="top__table">
+            <th scope="col">ID</th>
             <th scope="col">Name</th>
-            <th scope="col">Birth</th>
-            <th scope="col">CV</th>
+            <th scope="col">Position</th>
+            <th scope="col">Task</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
           <tr>
-            <th scope="row">1</th>
+            <th scope="row">01</th>
             <td>Nguyễn Văn Hiếu</td>
-            <td>30/11/2002</td>
-            <td>None</td>
+            <td>Admin</td>
+            <td>
+              <button type="button" class="btn btn-info">Edit</button>
+              <button type="button" class="btn btn-danger">Del</button>
+            </td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope="row">02</th>
             <td>Nguyễn Đăng Phương</td>
-            <td>21/09/2002</td>
-            <td>None</td>
+            <td>Admin</td>
+            <td> 
+              <button type="button" class="btn btn-info">Edit</button>
+              <button type="button" class="btn btn-danger">Del</button></td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope="row">03</th>
             <td>Nguyễn Quang Thái</td>
-            <td>24/12/2002</td>
-            <td>None</td>
+            <td>Admin</td>
+            <td>
+              <button type="button" class="btn btn-info">Edit</button>
+              <button type="button" class="btn btn-danger">Del</button>
+            </td>
           </tr>
         </tbody>
       </table>
-  <script src="./js/admin.js"></script>
-  <script src="../Assets/Libraries/js/bootstrap.bundle.js"></script>
-  <script src="../Assets/Libraries/js/jqeuery.js"></script>
-  <script src="../Assets/Libraries/js/owl.carousel.min.js"></script>
+  <script src="../js/admin.js"></script>
+  <script src="../../Libraries/js/aos.js"></script>
+  <script src="../../Libraries/js/bootstrap.bundle.js"></script>
+  <script src="../../Libraries/js/jqeuery.js"></script>\
+  <script src="../../Libraries/js/owl.carousel.min.js"></script>
   <script src="../js/bootstrap.js"></script>
 </body>
 </html>
