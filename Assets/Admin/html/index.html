@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Assets/Libraries/css/boxicons.min.css">
+    <link rel="stylesheet" href="../Assets/Libraries/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Assets/Libraries/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Assets/Libraries/css/reset.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="col-md-8">
+        <h1 class="top">
+          Curriculum Vitae For Admin
+          <span class = "add">.</span>
+        </h1>
+
+      </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../../CV.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-danger me-md-2" type="button">Settings</button>
+              <button class="btn btn-danger" type="button">LogOut</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Option</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Welcome</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Select your option</p>
+          <a type="button" class="btn btn-warning" href="../../../CV.html">Home</a>
+          <a type="button" class="btn btn-warning">Add CV</a>
+          <a type="button" class="btn btn-warning">Delete CV</a>
+          <a type="button" class="btn btn-warning">CV Management</a>
+          <a type="button" class="btn btn-warning">About Us</a>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Birth</th>
+            <th scope="col">CV</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Nguyễn Văn Hiếu</td>
+            <td>30/11/2002</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Nguyễn Đăng Phương</td>
+            <td>21/09/2002</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Nguyễn Quang Thái</td>
+            <td>24/12/2002</td>
+            <td>None</td>
+          </tr>
+        </tbody>
+      </table>
+  <script src="./js/admin.js"></script>
+  <script src="../Assets/Libraries/js/bootstrap.bundle.js"></script>
+  <script src="../Assets/Libraries/js/jqeuery.js"></script>
+  <script src="../Assets/Libraries/js/owl.carousel.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>
