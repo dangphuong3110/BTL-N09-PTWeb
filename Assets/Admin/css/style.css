@@ -5,6 +5,9 @@
     padding-bottom: 785px;
 } */
 
+.navbar.navbar-expand-lg{
+    background-color: #378c3f;
+}
 .dropdown-item{
     background-color: lightblue;
 }
@@ -85,4 +88,14 @@
 .d-flex{
     margin-left: 800px;
     margin-right: 800px;
+}
+
+.logo{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+    background-color: slategray;
+    height: 130px;
+    width: 100%;
+    padding-top: 15px;
 }
