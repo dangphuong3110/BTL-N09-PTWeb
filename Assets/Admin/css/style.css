@@ -1,9 +1,3 @@
-/* col.l-2.m-3{
-    background-color: lightblue;
-    text-align: center;
-    color: red;
-    padding-bottom: 785px;
-} */
 
 .navbar.navbar-expand-lg{
     background-color: #378c3f;
@@ -61,10 +55,6 @@
     border-radius: 8px;
 }
 
-.btn-btn-primary{
-    
-}
-
 .offcanvas-title{
     font-size: 50px;
 }
@@ -106,7 +96,4 @@
     height: 130px;
     width: 100%;
     padding-top: 15px;
-}
-.my-btn-margin {
-    margin-top: 4 !important;
 }
