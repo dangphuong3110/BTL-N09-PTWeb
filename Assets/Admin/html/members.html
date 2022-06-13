@@ -41,7 +41,7 @@
             </ul>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button class="btn btn-danger me-md-2" type="button">Settings</button>
+              <button class="btn btn-danger" type="button">Settings</button>
               <button class="btn btn-danger" type="button">LogOut</button>
             </div>
           </div>
@@ -60,17 +60,16 @@
           </div>
           <div class="offcanvas-body">
             <p>Select your Option!</p>
-            <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
-            <!-- <a class="btn btn-warning" data-bs-toggle="modal" href="#exampleModalToggle" role="button"">Add Members</a> -->
-            
             <a type="button" class="btn btn-warning" href="./posts.html">Posts</a>
             <a type="button" class="btn btn-warning">CV Management</a>
             <a type="button" class="btn btn-warning" href="../../../index.html">About Us</a>
           </div>
         </div>
+
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       </form>
+      
       <table class="table">
         <thead>
           <tr class="top__table">
@@ -86,8 +85,52 @@
             <td>Nguyễn Văn Hiếu</td>
             <td>Admin</td>
             <td>
-              <button type="button" class="btn btn-info">Edit</button>
-              <button type="button" class="btn btn-danger">Del</button>
+              <!-- <button type="button" class="btn btn-info">Edit</button> -->
+        <div class="text-center">
+          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Edit
+          </button>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Del
+          </button>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete Members</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this member ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div>
+
             </td>
           </tr>
           <tr>
@@ -95,53 +138,105 @@
             <td>Nguyễn Đăng Phương</td>
             <td>Admin</td>
             <td> 
-              <button type="button" class="btn btn-info">Edit</button>
-              <button type="button" class="btn btn-danger">Del</button></td>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>
+              </div>
+      
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Delete Members</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              <div class="modal-body">
+                  <h5 class="text-body">Are you sure want to delete this member ?</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </td>
           </tr>
           <tr>
             <th scope="row">03</th>
             <td>Nguyễn Quang Thái</td>
             <td>Admin</td>
             <td>
-              <button type="button" class="btn btn-info">Edit</button>
-              <button type="button" class="btn btn-danger">Del</button>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>
+              </div>
+      
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Delete Members</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              <div class="modal-body">
+                  <h5 class="text-body">Are you sure want to delete this member ?</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+              </div>
+                  </div>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody>
       </table>
-      
-    <div class="text-center">
-      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Add Members
-      </button>
-    </div>
-
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add Members</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Position</label>
-            <input type="text" class="form-control">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Add</button>
-      </div>
-    </div>
-      </div>
-    </div>
           
     <div class="container-row">
       <h3 class="logo">Copyright belong to team 9</h3>
