@@ -62,7 +62,8 @@ a:hover {
 }
 
 #home .img__slider {
-    height: 400px !important;
+    height: 500px !important;
+    object-fit: cover;
 }
 
 /* Member */
@@ -142,6 +143,7 @@ a:hover {
 .partner-img {
     width: 100%;
     height: 300px;
+    object-fit: cover;
 }
 
 
