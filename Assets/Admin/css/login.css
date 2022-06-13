@@ -4,13 +4,20 @@ body {
     background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../../Images/anhnen.jpg);
 }
 
-#login .title__margin h1 {
+#login {
     margin-top: 50px;
 }
 
 #login .login__margin {
     margin-top: 20px;
-    width: 450px;
-    height: 500px;
+    width: 1050px;
+    height: 600px;
     margin: auto;
+}
+
+img {
+    object-fit: cover;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
 }
