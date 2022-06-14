@@ -236,6 +236,7 @@ nav ul li a:visited{
 .card{
     padding: 8px 0;
     box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
 }
 
 section{
@@ -414,4 +415,59 @@ strong{
 .portfolio-image:hover .content{
     opacity: 1;
     top: 50%;
+}
+
+/* EXPERIENCE */
+#experience{
+    margin-top: 25px;
+}
+
+.work-experience .work-experience-header{
+    padding-top: 60px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #378c3f;
+    border-radius: 0.25rem;
+}
+
+h5{
+    font-size: 1.57em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+
+.work-experience .card{
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.education .education-header{
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #378c3f;
+    border-radius: 0.25rem;
+}
+
+.education .card{
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.education h5{
+    margin-bottom: 0px !important;
+}
+
+.education .category{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #9A9A9A;
+    margin-bottom: 5px !important;
+    margin-top: -5px !important;
+}
+
+.education p{
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
