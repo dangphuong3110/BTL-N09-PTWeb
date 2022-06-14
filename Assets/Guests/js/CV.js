@@ -7,8 +7,20 @@ $(document).ready(function () {
         else {
             $('nav').addClass('navbar-transparent');
         }
-    })
-})
+    });
+
+    // REFERENCE SLIDER
+    $('#reference-slider').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: true,
+        smartSpeed: 1000,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+    }); 
+});
 
 
 let navLink = document.querySelectorAll('.nav-pills .nav-link');

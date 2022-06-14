@@ -471,3 +471,34 @@ h5{
     margin-bottom: 5px;
     margin-top: 15px;
 }
+
+/* REFERENCES */
+#reference img{
+    height: 120px;
+    width: auto;
+    max-width: 100%;
+}
+
+#reference .card{
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+#reference .category{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #9A9A9A;
+    margin-top: -15px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.owl-dot.active span{
+    background-color: #378c3f !important;
+}
+
+.owl-dot span{
+    margin-top: -25px !important;
+}
