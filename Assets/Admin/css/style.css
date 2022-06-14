@@ -19,6 +19,7 @@
 .top{
     padding-left: 50px;
     font-size: 60px;
+    color: orange;
 }
 
 .add{
@@ -111,5 +112,14 @@
     font-size: 30px;
     margin-top: 30px;
     
+}
+.card{
+    margin-top: 30px;
+    
+}
+
+.col-2{
+    width: 50%;
+    height: 50%;
 }
 
