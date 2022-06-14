@@ -1,10 +1,3 @@
-/* col.l-2.m-3{
-    background-color: lightblue;
-    text-align: center;
-    color: red;
-    padding-bottom: 785px;
-} */
-
 .navbar.navbar-expand-lg{
     background-color: #378c3f;
 }
@@ -36,10 +29,15 @@
 
 .navbar-brand{
     font-size: 25px;
+    color: white;
 }
 
 .nav-item{
     font-size: 25px;
+}
+
+.nav-link{
+    color: white;
 }
 
 .container-fluid{
@@ -53,8 +51,8 @@
 }
 
 .btn.btn-danger{
-   
     border-radius: 8px;
+    
 }
 
 .offcanvas-title{
@@ -78,6 +76,7 @@
 }
 .btn.btn-info{
     border-radius: 8px;
+    
 }
 
 .btn.btn-secondary{
@@ -99,3 +98,17 @@
     width: 100%;
     padding-top: 15px;
 }
+
+.btn.btn-success{
+    width: 300px;
+    height: 75px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.offcanvas-text{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
