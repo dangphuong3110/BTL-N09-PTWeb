@@ -532,7 +532,7 @@ h5{
     border-radius: 30px;
     color: #555555;
     padding-right: 5px !important;
-    transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
 }
 
 .form-control{
@@ -541,7 +541,7 @@ h5{
     border-radius: 30px;
     font-size: 0.875em;
     box-shadow: none;
-    transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
 }
 
 .input-group .form-control{
@@ -552,11 +552,15 @@ h5{
     border-right: 0 none;
 }
 
-.input-group-focus .input-group-addon,
-.input-group-focus .form-control{
-    background-color: #ffffff;
+.input-group-focus .input-group-addon{
     border-color: #378c3f;
 }
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #378c3f;
+}
+
 
 @media only screen and (max-width: 768px) {
     .contact-information .contact{
