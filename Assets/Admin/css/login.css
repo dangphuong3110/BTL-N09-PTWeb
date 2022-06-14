@@ -65,12 +65,21 @@ img {
     box-sizing: content-box;
 }
 
-.login__forgot {
+/* Tạm ẩn */
+#login #login__contact {
+    display: block;
+}
+
+#login #login__password {
+    display: none;
+}
+
+#login__forgot {
     display: block;
     color: rgb(36, 230, 56);
 }
 
-.login__forgot:hover {
+#login__forgot:hover {
     color: rgb(240, 239, 171);
 }
 
@@ -84,7 +93,12 @@ img {
         width: 100%;
     }
 
-    .login__contact {
+    #login__contact {
+        width: 100%;
+        border-left: none !important;
+    }
+
+    #login__password {
         width: 100%;
         border-left: none !important;
     }
