@@ -502,3 +502,65 @@ h5{
 .owl-dot span{
     margin-top: -25px !important;
 }
+
+/* CONTACT */
+#contact{
+    margin-top: 25px;
+}
+
+.contact-information{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-information .contact{
+    padding: 8% 0 8% 20%;
+}
+
+.input-group,
+.form-group{
+    margin-bottom: 10px;
+}
+
+.input-group .input-group-addon{
+    padding: 10px 0 10px 18px;
+}
+
+.input-group-addon{
+    border: 1px solid #e3e3e3;
+    border-radius: 30px;
+    color: #555555;
+    padding-right: 5px !important;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control{
+    background-color: transparent;
+    border: 1px solid #e3e3e3;
+    border-radius: 30px;
+    font-size: 0.875em;
+    box-shadow: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-group .form-control{
+    border-left: 0 none;
+}
+
+.input-group-addon{
+    border-right: 0 none;
+}
+
+.input-group-focus .input-group-addon,
+.input-group-focus .form-control{
+    background-color: #ffffff;
+    border-color: #378c3f;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-information .contact{
+        padding: 8% 0 8% 0%;
+    }
+}
+

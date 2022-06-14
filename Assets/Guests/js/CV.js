@@ -37,3 +37,14 @@ for(let i=0; i<navLink.length; i++){
         tabPane[i].classList.add('active');
     });
 };
+
+let formControl = document.querySelectorAll('.form-control');
+let inputGroup = document.querySelectorAll('.input-group');
+
+for(let i=0; i<formControl.length; i++){
+    formControl[i].addEventListener('click', function(){
+        for(let j=0; j<inputGroup.length; j++)
+            inputGroup[j].classList.remove('input-group-focus');
+        inputGroup[i].classList.add('input-group-focus');
+    })
+}
