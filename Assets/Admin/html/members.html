@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Admin-Members</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../Libraries/css/aos.css">
     <link rel="stylesheet" href="../../Libraries/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../../Libraries/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../../Libraries/css/reset.css">
+    <link rel="stylesheet" href="../css/member.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -40,7 +41,7 @@
             </ul>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button class="btn btn-danger me-md-2" type="button">Settings</button>
+              <button class="btn btn-danger" type="button">Settings</button>
               <button class="btn btn-danger" type="button">LogOut</button>
             </div>
           </div>
@@ -59,15 +60,16 @@
           </div>
           <div class="offcanvas-body">
             <p>Select your Option!</p>
-            <a type="button" class="btn btn-warning" href="#">Add Members</a>
-            <a type="button" class="btn btn-warning">Posts</a>
+            <a type="button" class="btn btn-warning" href="./posts.html">Posts</a>
             <a type="button" class="btn btn-warning">CV Management</a>
-            <a type="button" class="btn btn-warning">About Us</a>
+            <a type="button" class="btn btn-warning" href="../../../index.html">About Us</a>
           </div>
         </div>
+
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       </form>
+      
       <table class="table">
         <thead>
           <tr class="top__table">
@@ -83,8 +85,65 @@
             <td>Nguyễn Văn Hiếu</td>
             <td>Admin</td>
             <td>
-              <button type="button" class="btn btn-info">Edit</button>
-              <button type="button" class="btn btn-danger">Del</button>
+              <!-- <button type="button" class="btn btn-info">Edit</button> -->
+        <div class="text-center">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Edit
+            </button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Del
+            </button>   
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">ID:</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Name:</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Position:</label>
+            <input type="text" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete Members</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this member ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div>
+
             </td>
           </tr>
           <tr>
@@ -92,29 +151,184 @@
             <td>Nguyễn Đăng Phương</td>
             <td>Admin</td>
             <td> 
-              <button type="button" class="btn btn-info">Edit</button>
-              <button type="button" class="btn btn-danger">Del</button></td>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>
+              </div>
+      
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">ID:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Name:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Position:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Delete Members</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              <div class="modal-body">
+                  <h5 class="text-body">Are you sure want to delete this member ?</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </td>
           </tr>
           <tr>
             <th scope="row">03</th>
             <td>Nguyễn Quang Thái</td>
             <td>Admin</td>
             <td>
-              <button type="button" class="btn btn-info">Edit</button>
-              <button type="button" class="btn btn-danger">Del</button>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>
+              </div>
+      
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">ID:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Name:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Position:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Delete Members</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              <div class="modal-body">
+                  <h5 class="text-body">Are you sure want to delete this member ?</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+              </div>
+                  </div>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <div class="container-row">
-        <h3 class="logo">Copyright belong to team 9</h3>
+      <div class="text-center">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+          Add Members
+        </button>
+      </div>
+
+   <div class="modal" id="myModal">
+      <div class="modal-dialog">
+         <div class="modal-content">
+          
+            <div class="modal-header">
+               <h4 class="modal-title">ADD MEMBERS</h4>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">ID:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Name:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Position:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+           
+            <div class="modal-footer">
+               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-info" data-dismiss="modal">Add</button>
+            </div>
+         </div>
+      </div>
+   </div>
+  
+         
+    <div class="container-row">
+      <h3 class="logo">Copyright belong to team 9</h3>
     </div>
+  <script src="../js/member.js"></script>
   <script src="../js/admin.js"></script>
   <script src="../../Libraries/js/aos.js"></script>
   <script src="../../Libraries/js/bootstrap.bundle.js"></script>
   <script src="../../Libraries/js/jqeuery.js"></script>\
   <script src="../../Libraries/js/owl.carousel.min.js"></script>
   <script src="../js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
