@@ -33,8 +33,10 @@ a {
 }
 
 #login .login__main h3 {
+    display: block;
+    margin: auto;
     font-size: 50px;
-    padding: 100px;
+    padding: 130px 0;
 }
 
 
@@ -45,11 +47,13 @@ a {
 
 .col__image {
     display: block;
-    margin: auto auto;
+    margin: auto;
     line-height: 120px !important;
-    vertical-align: middle;
     width: 120px;
     height: 120px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
 }
 
 img {
@@ -57,7 +61,7 @@ img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    -webkit-animation: border 1.8s infinite;
+    -webkit-animation: border 1.5s infinite;
     box-sizing: content-box;
 }
 
@@ -120,14 +124,14 @@ img {
     }
 
     20% {
-        border: 6px solid rgba(3, 158, 3, 0.5);
+        border: 6px solid rgba(3, 158, 3, 0.6);
     }
 
     30% {
-        border: 8px solid rgba(3, 158, 3, 0.2);
+        border: 8px solid rgba(3, 158, 3, 0.3);
     }
 
     100% {
-        border: 10px solid rgba(3, 158, 3, 0.1);
+        border: 10px solid rgba(3, 158, 3, 0);
     }
 }
