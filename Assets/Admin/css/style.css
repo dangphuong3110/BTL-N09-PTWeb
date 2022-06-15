@@ -132,6 +132,14 @@
 .btn.btn-outline-success{
     text-align: center;
     font-size: 30px;
+    margin-top: 30px;
+}
+
+.btn__add{
+    margin-top: 40px;
+    margin-left: 300px;
+    
+    border-radius: 8px;
 }
 
 
