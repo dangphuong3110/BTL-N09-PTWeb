@@ -15,9 +15,9 @@ $(document).ready(function () {
         margin: 0,
         items: 1,
         dots: true,
-        smartSpeed: 1000,
+        smartSpeed: 700,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: true,
     }); 
 });

@@ -287,7 +287,7 @@ strong{
 }
 
 .progress-container .progress-badge {
-  font-size: .8571em;
+  font-size: 0.875em;
   text-transform: uppercase;
 }
 
@@ -334,20 +334,18 @@ strong{
 }
 
 .nav-pills.nav-pills-primary .nav-item .nav-link.active,
-.nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-primary .nav-item .nav-link.active:hover{
+.nav-pills.nav-pills-primary .nav-item .nav-link.active:focus{
     background-color: #378c3f;
 }
 
 .nav-pills .nav-item .nav-link.active,
-.nav-pills .nav-item .nav-link.active:focus,
-.nav-pills .nav-item .nav-link.active:hover{
+.nav-pills .nav-item .nav-link.active:focus{
     background-color: #9a9a9a;
     color: #fff;
     box-shadow: 0 5px 35px 0 rgb(0, 0, 0, 0.3);
 }
 
-.nav-pills .nav-item .nav-link {
+.nav-pills .nav-item .nav-link{
     padding: 0 15.5px;
     text-align: center;
     height: 60px;
@@ -362,7 +360,7 @@ strong{
 .nav-pills .nav-link,
 .nav-item .nav-link,
 .navbar,
-.nav-tabs .nav-link {
+.nav-tabs .nav-link{
     transition: all 300ms ease 0s;
 }
 
@@ -561,10 +559,34 @@ h5{
     border-color: #378c3f;
 }
 
-
 @media only screen and (max-width: 768px) {
     .contact-information .contact{
         padding: 8% 0 8% 0%;
     }
 }
 
+/* FOOTER */
+.footer{
+    padding: 24px 0;
+}
+
+.btn.btn-link{
+    color: #888;
+    padding: 0.5rem 0.7rem;
+}
+
+.btn.facebook:hover{
+    color: #3b5998;
+}
+
+.btn.twitter:hover{
+    color: #1da1f2;
+}
+
+.btn.google:hover{
+    color: #dd4b39;
+}
+
+.btn.instagram:hover{
+    color: #f21db2;
+}
