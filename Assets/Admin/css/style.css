@@ -123,3 +123,10 @@
     height: 50%;
 }
 
+.card-title{
+    text-align: center;
+    font-size: 35px;
+    color: red;
+}
+
+
