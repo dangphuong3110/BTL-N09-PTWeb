@@ -54,6 +54,44 @@
         <img src="../../Images/hero-img.jpg" alt="">
     </div>
 
+    <div class="btn__add" >
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+          Add Services 
+        </button>
+      </div>
+
+   <div class="modal" id="myModal">
+      <div class="modal-dialog">
+         <div class="modal-content">
+          
+            <div class="modal-header">
+               <h4 class="modal-title">ADD SERVICES</h4>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">ID:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Name:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+           
+            <div class="modal-footer">
+               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-info" data-dismiss="modal">Add</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
 
     <table class="table">
         <thead>
@@ -249,5 +287,8 @@
     <script src="../../Libraries/js/bootstrap.bundle.js"></script>
     <script src="../../Libraries/js/jqeuery.js"></script>
     <script src="../../Libraries/js/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
