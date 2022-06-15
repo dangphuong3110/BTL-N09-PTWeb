@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../Libraries/css/aos.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/reset.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="col-md-8">
+          <h1 class="top">
+            Curriculum Vitae 
+            <span>For Admin</span>
+            <span class = "add">.</span>
+          </h1>
+  
+        </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../../../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./admin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Guide</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+              </ul>
+  
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-danger" type="button">Settings</button>
+                <a class="btn btn-danger" type="button" href="./login.html">LogOut</a>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <div class="image">
+        <img src="../../Images/hero-img.jpg" alt="">
+    </div>
+
+    <div class="btn__add" >
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+          Add Services 
+        </button>
+      </div>
+
+   <div class="modal" id="myModal">
+      <div class="modal-dialog">
+         <div class="modal-content">
+          
+            <div class="modal-header">
+               <h4 class="modal-title">ADD SERVICES</h4>
+            </div>
+            
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">ID:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Name:</label>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+           
+            <div class="modal-footer">
+               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-info" data-dismiss="modal">Add</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+
+    <table class="table">
+        <thead>
+          <tr class="top__table">
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Tasks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">         
+            <td>01</td>
+            <td>UI-UX</td>
+            <td>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>   
+  
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Services</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+              <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label class="form-label">ID:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </form>
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Name:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this service ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div>
+            </div>
+            </td>
+          </tr>
+          <tr>  
+            <td>02</td>
+            <td>Graphic design</td>
+            <td>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>   
+  
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Services</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+              <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label class="form-label">ID:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </form>
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Name:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this service ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div>
+            </div>
+            </td>
+          </tr>
+          <tr class="table-success">    
+            <td>03</td>
+            <td>Web Design</td>
+            <td>
+              <div class="text-center">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>   
+  
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Services</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+              <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label class="form-label">ID:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </form>
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Name:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this service ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div>
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    <div class="text-center">
+        <a type="button" class="btn btn-outline-success" href="./posts.html">
+          Go Back Posts
+        </a>
+      </div>
+  
+      <div class="container-row">
+          <h3 class="logo">Copyright belong to team 9</h3>
+      </div>
+
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../../Libraries/js/aos.js"></script>
+    <script src="../../Libraries/js/bootstrap.bundle.js"></script>
+    <script src="../../Libraries/js/jqeuery.js"></script>
+    <script src="../../Libraries/js/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
