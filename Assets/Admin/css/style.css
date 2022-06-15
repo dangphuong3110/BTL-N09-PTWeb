@@ -129,4 +129,9 @@
     color: red;
 }
 
+.btn.btn-outline-success{
+    text-align: center;
+    font-size: 30px;
+}
+
 
