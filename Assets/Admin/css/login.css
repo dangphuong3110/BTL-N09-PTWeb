@@ -19,6 +19,9 @@ a {
     margin-top: 80px;
 }
 
+.about__information {
+    width: 100% +30px;
+}
 
 #login .login__main {
     box-shadow: 6px 6px 20px rgba(40, 39, 39, 0.3);
