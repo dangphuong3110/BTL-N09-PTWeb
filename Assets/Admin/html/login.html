@@ -20,31 +20,61 @@
 <body>
     <div id="login">
         <div class="container-fluid">
-            <div class="row login__margin border text-center">
-                <div class="col-lg-5">
-                    <h1 class="h1">Login</h1>
+            <div class="row login__main border text-center">
+                <div class="col-sm-4 login__title">
+                    <h1 class="h1">Creative CV</h1>
+                    <h3 class="h3" id="paragraph">Login admin account</h3>
                 </div>
-                <div class="col-lg-7 border-start">
+                <div class="col-sm-8 border-start" id="login__contact">
                     <div class="col-md">
                         <h1 class="h1">Login</h1>
-                        <img src="../../Images/admin.jpg"></img>
+                        <div class="col col__image">
+                            <img src="../../Images/admin.jpg"></img>
+                        </div>
+
                     </div>
                     <div class="col-md">
                         <div class="input-group flex-nowrap input-group-lg my-3 col-md">
                             <span class="input-group-text" id="addon-wrapping"><i class="ti-user"></i></span>
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                 aria-describedby="addon-wrapping">
+                            <p id="note__user"></p>
                         </div>
                     </div>
                     <div class="col-md">
                         <div class="input-group flex-nowrap input-group-lg my-3 col-md">
-                            <span class="input-group-text" id="addon-wrapping"><i class="ti-lock"></i></span>
+                            <span class="input-group-text" id="addon-wrapping"><i class="ti-unlock"></i></span>
                             <input type="password" class="form-control" placeholder="Password" aria-label="Password"
                                 aria-describedby="addon-wrapping">
+                            <p id="note__pass"></p>
                         </div>
                     </div>
                     <div class="col-md">
+<<<<<<< HEAD
+                        <div class="col-4">
+                            <a class="text-start h5" id="login__forgot" href="#">Forgot password?<br></a>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-lg my-3" id="login__login">Login</a>
+                        <p class="message mb-3 h5 login__create">Not registered? <a href="#">Create an account</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-8 border-start" id="login__password">
+                    <div class="col-md">
+                        <h1 class="h1">Enter email or numberphone</h1>
+                    </div>
+                    <div class="col-md">
+                        <div class="input-group flex-nowrap input-group-lg my-3 col-md">
+                            <span class="input-group-text" id="addon-wrapping"><i class="ti-email"></i></span>
+                            <input type="text" class="form-control" placeholder="email or numberphone"
+                                aria-label="email or numberphone" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <a href="#" class="btn btn-primary btn-lg my-3 " id="login__submit">Submit</a>
+                        <a href="#" class="btn btn-primary btn-lg my-3 " id="login__back">Back to login</a>
+=======
                         <a href="./admin.html" class="btn btn-primary btn-lg">Login</a>
+>>>>>>> f12b99c6fc6e567def9fbb6f07a8504be21f36a9
                     </div>
                 </div>
             </div>
@@ -54,7 +84,7 @@
     <script src="../../Libraries/js/bootstrap.bundle.js"></script>
     <script src="../../Libraries/js/jqeuery.js"></script>
     <script src="../../Libraries/js/owl.carousel.min.js"></script>
-    <script src="../../Guests/js/homepage.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
