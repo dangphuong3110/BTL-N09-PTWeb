@@ -207,4 +207,8 @@ a:hover {
         width: 50%;
         margin: auto;
     }
+
+    .para {
+        text-align: center;
+    }
 }
