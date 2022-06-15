@@ -19,7 +19,7 @@
 
 <body>
     <!-- Header and Navbar -->
-    <section id="header">
+    <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container justify-content-between">
                 <a class="navbar-brand logo" href="#">
@@ -39,7 +39,7 @@
                             <a class="nav-link" href="#member">Member</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#hotline">Hotline</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </header>
 
     <!-- Slider -->
     <section id="home">
@@ -102,12 +102,12 @@
     </section>
 
     <!-- Member -->
-    <section id="member" class="my-3">
+    <section id="member" class="mt-5">
         <div class="container">
             <div class="row ">
                 <h1 class="h3 member-header text-dark my-3">Member</h1>
             </div>
-            <div class="row justify-content-around py-5">
+            <div class="row justify-content-around py-2">
                 <div class="col-lg-3 my-2">
                     <div class="contact__input bg-light page--CV " data-aos="flip-left" data-aos-duration="600"
                         data-aos-delay="300" data-aos-easing=ease-in-out>
@@ -178,27 +178,27 @@
         </div>
     </section>
 
-    <!-- Hotline -->
-    <section id="hotline" class="my-3">
+    <!-- Contact -->
+    <section id="contact" class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-7">
-                    <div class="row">
-                        <h1 class="h3 member-header text-dark my-3">Hotline</h1>
+                    <div class="row my-3">
+                        <h1 class="h3 member-header text-dark ">Contact</h1>
                     </div>
                     <div class="row text-dark">
                         <p class="h5 mb-2">Hotline tư vấn:</p>
-                        <p class="hotline__member my-1">
+                        <p class="contact__member my-1">
                             <i class="ti-mobile"> </i>
                             <a href="#" class="numberphone">0329603280</a>
                             <span>- Nguyễn Đăng Phương</span>
                         </p>
-                        <p class="hotline__member my-1">
+                        <p class="contact__member my-1">
                             <i class="ti-mobile"> </i>
                             <a href="#" class="numberphone">0343282228</a>
                             <span>- Nguyễn Quang Thái</span>
                         </p>
-                        <p class="hotline__member my-1">
+                        <p class="contact__member my-1">
                             <i class="ti-mobile"> </i>
                             <a href="#" class="numberphone">0973513198</a>
                             <span>- Nguyễn Văn Hiếu</span>
@@ -263,19 +263,43 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="mt-5">
         <div class="container">
             <div class="row ">
                 <h1 class="h3 member-header text-dark my-3">About</h1>
             </div>
-            <div class="row justify-content-around py-5">
+            <div class="row justify-content-between py-2 text-center text-dark">
+                <div class="col-md-3">
+                    <img src="./Assets/Images/DangPhuong.jpg" alt="Đăng Phương" class="about__image">
+                    <p class="mt-1 mb-2 h5">Nguyễn Đăng Phương</p>
+                    <div class="row text-start">
+                        <p>Nghề nghiệp: Sinh viên</p>
+                        <p class="my-2">Nơi làm việc: Trường Đại học Thủy Lợi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <img src="./Assets/Images/hieu.jpg" alt="Văn Hiếu" class="about__image">
+                    <p class="mt-1 mb-2 h5">Nguyễn Văn Hiếu</p>
+                    <div class="row text-start">
+                        <p>Nghề nghiệp: Sinh viên</p>
+                        <p class="my-2">Nơi làm việc: Trường Đại học Thủy Lợi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <img src="./Assets/Images/Thai2.jpg" alt="Quang Thái" class="about__image">
+                    <p class="h5 mt-1 mb-2">Nguyễn Quang Thái</p>
+                    <div class="row text-start">
+                        <p>Nghề nghiệp: Sinh viên</p>
+                        <p class="my-2">Nơi làm việc: Trường Đại học Thủy Lợi</p>
+                    </div>
 
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <section id="footer">
+    <footer id="footer" class="mt-5">
         <div class="container mt-3 text-dark">
             <div class="row border-bottom border-secondary border-2">
                 <div class="col-md-3 my-2">
@@ -304,7 +328,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
     <!--JavaScript -->
     <script>
         AOS.init({
