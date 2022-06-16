@@ -36,6 +36,10 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#login .login__information {
+    height: 80px;
+}
+
 #login .login__main h3 {
     display: block;
     margin: auto;

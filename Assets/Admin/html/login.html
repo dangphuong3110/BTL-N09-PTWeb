@@ -33,52 +33,51 @@
                         </div>
 
                     </div>
-                    <div class="col-md">
+                    <div class="col-md login__information">
                         <div class="input-group flex-nowrap input-group-lg my-3 col-md">
                             <span class="input-group-text" id="addon-wrapping"><i class="ti-user"></i></span>
                             <input type="text" class="form-control" id="userName" placeholder="Username"
                                 aria-label="Username" aria-describedby="addon-wrapping">
 
                         </div>
-                        <p id="note__user" class="py-1"></p>
+                        <p id="note__user" class="text-start text-light"></p>
                     </div>
-                    <div class="col-md">
-                        <div class="input-group flex-nowrap input-group-lg my-3 col-md">
+                    <div class="col-md login__information">
+                        <div class="input-group flex-nowrap input-group-lg mt-3 col-md">
                             <span class="input-group-text" id="addon-wrapping"><i class="ti-unlock"></i></span>
-                            <input type="password" class="form-control" placeholder="Password" aria-label="Password"
-                                aria-describedby="addon-wrapping">
+                            <input type="password" id="passWord" class="form-control" placeholder="Password"
+                                aria-label="Password" aria-describedby="addon-wrapping">
                             <br>
-                            <p id="note__pass"></p>
                         </div>
+                        <p id="note__pass" class="text-start text-light"></p>
                     </div>
                     <div class="col-md">
                         <div class="col-4">
                             <a class="text-start h5" id="login__forgot" href="#">Forgot password?<br></a>
                         </div>
                         <a href="./admin.html" class="btn btn-primary btn-lg my-3" id="login__login">Login</a>
-                        <p class="message mb-3 h5 login__create">Not registered? <a href="#">Create an account</a></p>
+                        <p class="message mb-3 h5 login__create">Not registered? <a href="./create.html">Create an
+                                account</a></p>
                     </div>
                 </div>
-
-            </div>
-            <div class="col-sm-8 border-start" id="login__password">
-                <div class="col-md">
-                    <h1 class="h1">Enter email or numberphone</h1>
-                </div>
-                <div class="col-md">
-                    <div class="input-group flex-nowrap input-group-lg my-3 col-md">
-                        <span class="input-group-text" id="addon-wrapping"><i class="ti-email"></i></span>
-                        <input type="text" class="form-control" placeholder="email or numberphone"
-                            aria-label="email or numberphone" aria-describedby="addon-wrapping">
+                <div class="col-sm-8 border-start" id="login__password">
+                    <div class="col-md">
+                        <h1 class="h1">Enter email or numberphone</h1>
                     </div>
-                </div>
-                <div class="col-md">
-                    <a href="#" class="btn btn-primary btn-lg my-3 " id="login__submit">Submit</a>
-                    <a href="#" class="btn btn-primary btn-lg my-3 " id="login__back">Back to login</a>
+                    <div class="col-md">
+                        <div class="input-group flex-nowrap input-group-lg my-3 col-md">
+                            <span class="input-group-text" id="addon-wrapping"><i class="ti-email"></i></span>
+                            <input type="text" class="form-control" placeholder="email or numberphone"
+                                aria-label="email or numberphone" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <a href="#" class="btn btn-primary btn-lg my-3 " id="login__submit">Submit</a>
+                        <a href="#" class="btn btn-primary btn-lg my-3 " id="login__back">Back to login</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- JS -->
     <script src="../../Libraries/js/bootstrap.bundle.js"></script>
