@@ -62,6 +62,7 @@ login.addEventListener("click", function () {
 
 //Biểu thức chính quy cho email
 var checkEmail = /^([a-zA-Z0-9]+)@gmail\.com$/;
+var loginEmail = document.getElementById('login-email');
 var loginSubmit = document.getElementById('login-submit');
 var noteEmail = document.getElementById('note-email');
 loginEmail.addEventListener("change", function () {
@@ -70,8 +71,11 @@ loginEmail.addEventListener("change", function () {
         loginSubmit.classList.remove('disabled');
     }
     else {
-        noteEmail.textContent = "Check your email";
+        noteEmail.textContent = "Must have the string '@gmail.com' at the end";
         loginSubmit.classList.add('disabled');
     }
 })
 
+loginSubmit.addEventListener("click", function () {
+    alert('Success!');
+}) 
