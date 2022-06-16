@@ -72,7 +72,7 @@
   text-align: center;
 }
 
-.top__table{
+.top-table{
     background-color:aquamarine;
     font-size: 25px;
 }
@@ -137,14 +137,14 @@
     margin-top: 30px;
 }
 
-.btn__add{
+.btn-add{
     margin-top: 40px;
     margin-left: 300px;
     
     border-radius: 8px;
 }
 
-.btn__menu{
+.btn-menu{
     background-color: #378c3f;
     margin-left: 20px;
 }
@@ -154,6 +154,10 @@
 }
 
 
-.footer__icon{
+.footer-icon{
     font-size: 35px;
+}
+
+.image>img{
+    width: 100%;
 }

@@ -3,7 +3,9 @@
     color:orangered;
 }
 
-
+.d-flex{
+    margin-top: 25px;
+}
 
 .text-body{
     text-align: center;
