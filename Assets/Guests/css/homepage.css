@@ -63,7 +63,7 @@ a:hover {
 
 #home .img-slider {
     height: 500px !important;
-
+    object-fit: cover;
 }
 
 /* Member */
@@ -90,8 +90,11 @@ a:hover {
     overflow: hidden;
 }
 
-/* Member icons (facebook, instagram, github) */
+.image-cv {
+    object-fit: cover;
+}
 
+/* Watch CV */
 .image {
     width: 70%;
     margin: auto;
@@ -190,8 +193,13 @@ a:hover {
     color: #1DA1F2;
 }
 
-#footer .footer-sicon .ti-youtube:hover {
+#footer .footer-icon .ti-youtube:hover {
     color: #EA4335;
+}
+
+.map {
+    width: 100%;
+    height: 85%;
 }
 
 /* responsive */
