@@ -6,7 +6,7 @@
 }
 
 .offcanvas{
-    background-color: cyan;
+    background-color: #378c3f;
 }
 
 *{ 
@@ -25,7 +25,6 @@
 .add{
     color: orange;
     font-size: 70px;
-    
 }
 
 .navbar-brand{
@@ -58,10 +57,12 @@
 
 .offcanvas-title{
     font-size: 50px;
+    color: white;
 }
 
 .offcanvas-body{
     font-size: 30px;
+    color: white;
 }
 
 .table{
@@ -142,4 +143,12 @@
     border-radius: 8px;
 }
 
+.btn__menu{
+    background-color: #378c3f;
+    margin-left: 20px;
+}
 
+.ti-menu{
+    font-size: 30px;
+
+}
