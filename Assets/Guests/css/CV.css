@@ -237,6 +237,7 @@ nav ul li a:visited{
     padding: 8px 0;
     box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
     border-radius: 0.25rem;
+    overflow: hidden;
 }
 
 section{
@@ -416,6 +417,11 @@ strong{
 }
 
 /* EXPERIENCE */
+.bg-success{
+    background-color: #378c3f !important;
+    border-radius: 0.25rem;
+}
+
 #experience{
     margin-top: 25px;
 }
@@ -425,8 +431,6 @@ strong{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    background-color: #378c3f;
-    border-radius: 0.25rem;
 }
 
 h5{
@@ -444,8 +448,6 @@ h5{
     padding-top: 50px;
     text-align: center;
     color: #fff;
-    background-color: #378c3f;
-    border-radius: 0.25rem;
 }
 
 .education .card{
