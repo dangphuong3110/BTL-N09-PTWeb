@@ -1,46 +1,81 @@
-var login__password = document.getElementById('login__password');
-var login__contact = document.getElementById('login__contact');
-var login__forgot = document.getElementById('login__forgot');
-var login__submit = document.getElementById('login__submit');
-var login__back = document.getElementById('login__back');
-// Chưa hoàn thành
-var login__login = document.getElementById('login__login');
+var loginPassword = document.getElementById('login-password');
+var loginContact = document.getElementById('login-contact');
+var loginForgot = document.getElementById('login-forgot');
+var loginSubmit = document.getElementById('login-submit');
+var loginBack = document.getElementById('login-back');
 
-login__forgot.addEventListener("click", function () {
-    login__password.style.display = 'block';
-    login__contact.style.display = 'none';
+// Sử lý display cho các phần forgot, back to login và submit
+loginForgot.addEventListener("click", function () {
+    loginPassword.style.display = 'block';
+    loginContact.style.display = 'none';
 })
 
-login__submit.addEventListener("click", function () {
-    login__password.style.display = 'none';
-    login__contact.style.display = 'block';
+loginSubmit.addEventListener("click", function () {
+    loginPassword.style.display = 'none';
+    loginContact.style.display = 'block';
 })
 
-login__back.addEventListener("click", function () {
-    login__password.style.display = 'none';
-    login__contact.style.display = 'block';
+loginBack.addEventListener("click", function () {
+    loginPassword.style.display = 'none';
+    loginContact.style.display = 'block';
 })
 
-// Chưa hoàn thành 
-// login__login.addEventListener("click", function () {
-//     login__login.style.href = './admin.html';
-// })
+
 
 var user = document.getElementById('userName');
-var note__user = document.getElementById('note__user');
-var note__pass = document.getElementById('note__pass');
+var pass = document.getElementById('passWord');
+var noteUser = document.getElementById('note-user');
+var notePass = document.getElementById('note-pass');
 
+//Biểu thức chính quy của input userName
 function checkName(userName) {
     var check = /^[A-Za-z0-9]{8,20}$/
     return check.test(userName);
 }
 
-user.addEventListener("change", function () {
+//Biểu thức chính quy của input passWord
+function checkPass(password) {
+    var check = /^[A-Za-z0-9]{8,20}$/;
+    return check.test(password);
+}
+
+var login = document.getElementById('login-login');
+
+//Xử lý sự kiện click cho login
+login.addEventListener("click", function () {
     if (checkName(user.value)) {
-        note__user.textContent = "";
+        noteUser.textContent = "";
     }
     else {
-        note__user.textContent = "Must be alphabetic or numeric and length 8-20";
-        note__user.style.color = "red";
+        noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
+    }
+    if (checkPass(pass.value)) {
+        notePass.textContent = "";
+    }
+    else {
+        notePass.textContent = "Must be alphabetic or numeric and length 8-20";
+    }
+    if (checkName(user.value) && checkPass(pass.value)) {
+        login.setAttribute('href', './admin.html');
     }
 })
+
+//Biểu thức chính quy cho email
+var checkEmail = /^([a-zA-Z0-9]+)@gmail\.com$/;
+var loginEmail = document.getElementById('login-email');
+var loginSubmit = document.getElementById('login-submit');
+var noteEmail = document.getElementById('note-email');
+loginEmail.addEventListener("change", function () {
+    if (checkEmail.test(loginEmail.value)) {
+        noteEmail.textContent = "";
+        loginSubmit.classList.remove('disabled');
+    }
+    else {
+        noteEmail.textContent = "Must have the string '@gmail.com' at the end";
+        loginSubmit.classList.add('disabled');
+    }
+})
+
+loginSubmit.addEventListener("click", function () {
+    alert('Success!');
+}) 

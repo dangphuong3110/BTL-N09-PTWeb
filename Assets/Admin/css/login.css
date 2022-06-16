@@ -4,7 +4,7 @@ html {
 
 body {
     width: 100%;
-    height: 100%;
+    height: 88%;
     background-image: url(../../Images/teamwork.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,11 +19,11 @@ a {
     margin-top: 80px;
 }
 
-.about__information {
+.about-information {
     width: 100% +30px;
 }
 
-#login .login__main {
+#login .login-main {
     box-shadow: 6px 6px 20px rgba(40, 39, 39, 0.3);
     background-color: rgba(125, 124, 124, 0.3);
     margin-top: 20px;
@@ -32,11 +32,15 @@ a {
     margin: auto;
 }
 
-#login .login__main h1 {
+#login .login-main h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#login .login__main h3 {
+#login .login-information {
+    height: 80px;
+}
+
+#login .login-main h3 {
     display: block;
     margin: auto;
     font-size: 50px;
@@ -49,7 +53,7 @@ a {
     -webkit-animation: colorBackground 5s infinite;
 }
 
-.col__image {
+.col-image {
     display: block;
     margin: auto;
     line-height: 120px !important;
@@ -70,26 +74,26 @@ img {
 }
 
 /* Tạm ẩn */
-#login #login__contact {
+#login #login-contact {
     display: block;
 }
 
-#login #login__password {
+#login #login-password {
     display: none;
 }
 
-#login__forgot {
+#login-forgot {
     display: block;
     color: rgb(36, 230, 56);
 }
 
-#login__forgot:hover {
+#login-forgot:hover {
     color: rgb(240, 239, 171);
 }
 
 /* Respoinsive */
 @media (max-width: 768px) {
-    .login__title {
+    .login-title {
         display: none;
     }
 
@@ -97,17 +101,17 @@ img {
         width: 100%;
     }
 
-    #login__contact {
+    #login-contact {
         width: 100%;
         border-left: none !important;
     }
 
-    #login__password {
+    #login-password {
         width: 100%;
         border-left: none !important;
     }
 
-    .login__forgot {
+    .login-forgot {
         display: block;
         width: 100%;
     }

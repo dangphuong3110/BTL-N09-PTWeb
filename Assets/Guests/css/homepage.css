@@ -61,7 +61,7 @@ a:hover {
     color: white;
 }
 
-#home .img__slider {
+#home .img-slider {
     height: 500px !important;
     object-fit: cover;
 }
@@ -72,7 +72,7 @@ a:hover {
     background-color: rgb(221, 216, 216);
 }
 
-#member .img__member {
+#member .img-member {
     width: 100%;
     height: 200px;
     text-align: center;
@@ -90,8 +90,11 @@ a:hover {
     overflow: hidden;
 }
 
-/* Member icons (facebook, instagram, github) */
+.image-cv {
+    object-fit: cover;
+}
 
+/* Watch CV */
 .image {
     width: 70%;
     margin: auto;
@@ -152,7 +155,7 @@ a:hover {
     background-color: rgb(221, 216, 216);
 }
 
-.about__image {
+.about-image {
     width: 200px;
     height: 200px;
     margin: auto;
@@ -161,13 +164,13 @@ a:hover {
     align-content: center;
 }
 
-.about__image--item {
+.about-image--item {
     width: 170px;
     height: 170px;
     border-radius: 50%;
 }
 
-.about__image--item:hover {
+.about-image--item:hover {
     width: 200px;
     height: 200px;
 }
@@ -177,21 +180,26 @@ a:hover {
     background-color: rgba(55, 140, 63, 0.8) !important;
 }
 
-#footer .footer__icon i {
+#footer .footer-icon i {
     font-size: 32px;
     margin-bottom: 16px;
 }
 
-#footer .footer__icon .ti-facebook:hover {
+#footer .footer-icon .ti-facebook:hover {
     color: #3B5998;
 }
 
-#footer .footer__icon .ti-twitter-alt:hover {
+#footer .footer-icon .ti-twitter-alt:hover {
     color: #1DA1F2;
 }
 
-#footer .footer__icon .ti-youtube:hover {
+#footer .footer-icon .ti-youtube:hover {
     color: #EA4335;
+}
+
+.map {
+    width: 100%;
+    height: 85%;
 }
 
 /* responsive */
