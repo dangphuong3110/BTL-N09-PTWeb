@@ -1,35 +1,31 @@
-var login__password = document.getElementById('login__password');
-var login__contact = document.getElementById('login__contact');
-var login__forgot = document.getElementById('login__forgot');
-var login__submit = document.getElementById('login__submit');
-var login__back = document.getElementById('login__back');
-// Chưa hoàn thành
-var login__login = document.getElementById('login__login');
+var loginPassword = document.getElementById('login-password');
+var loginContact = document.getElementById('login-contact');
+var loginForgot = document.getElementById('login-forgot');
+var loginSubmit = document.getElementById('login-submit');
+var loginBack = document.getElementById('login-back');
 
-login__forgot.addEventListener("click", function () {
-    login__password.style.display = 'block';
-    login__contact.style.display = 'none';
+
+loginForgot.addEventListener("click", function () {
+    loginPassword.style.display = 'block';
+    loginContact.style.display = 'none';
 })
 
-login__submit.addEventListener("click", function () {
-    login__password.style.display = 'none';
-    login__contact.style.display = 'block';
+loginSubmit.addEventListener("click", function () {
+    loginPassword.style.display = 'none';
+    loginContact.style.display = 'block';
 })
 
-login__back.addEventListener("click", function () {
-    login__password.style.display = 'none';
-    login__contact.style.display = 'block';
+loginBack.addEventListener("click", function () {
+    loginPassword.style.display = 'none';
+    loginContact.style.display = 'block';
 })
 
-// Chưa hoàn thành 
-// login__login.addEventListener("click", function () {
-//     login__login.style.href = './admin.html';
-// })
+
 
 var user = document.getElementById('userName');
 var pass = document.getElementById('passWord');
-var note__user = document.getElementById('note__user');
-var note__pass = document.getElementById('note__pass');
+var noteUser = document.getElementById('note-user');
+var notePass = document.getElementById('note-pass');
 
 
 //Xử lý sự kiện và biểu thức chính quy của input userName
@@ -37,20 +33,21 @@ function checkName(userName) {
     var check = /^[A-Za-z0-9]{8,20}$/
     return check.test(userName);
 }
-user.addEventListener("blur", function () {
-    if (user.value.length === 0) {
-        note__user.textContent = "Must enter input";
 
-    }
-})
+// //Sự kiện di chuyển chuột ra khỏi vùng nhập
+// user.addEventListener("blur", function () {
+//     if (user.value.length === 0) {
+//         note-user.textContent = "Must enter input";
 
+//     }
+// })
+//Sự kiện thay đổi giá trị
 user.addEventListener("change", function () {
     if (checkName(user.value)) {
-        note__user.textContent = "";
+        noteUser.textContent = "";
     }
     else {
-        note__user.textContent = "Must be alphabetic or numeric and length 8-20";
-        note__user.style.color = "red";
+        noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
     }
 })
 
@@ -59,18 +56,43 @@ function checkPass(password) {
     var check = /^[A-Za-z0-9]{8,20}$/;
     return check.test(password);
 }
-pass.addEventListener("blur", function () {
-    if (pass.value.length === 0) {
-        note__pass.textContent = "Must enter input";
-    }
-})
 
-pass.addEventListener("change", function () {
-    if (checkPass(pass.value)) {
-        note__pass.textContent = "";
+//Sự kiện di chuyển chuột ra khỏi vùng nhập
+// pass.addEventListener("blur", function () {
+//     if (pass.value.length === 0) {
+//         note-pass.textContent = "Must enter input";
+//     }
+// })
+
+//Sự kiện thay đổi giá trị
+// pass.addEventListener("change", function () {
+//     if (checkPass(pass.value)) {
+//         login.setAttribute('href', './admin.html');
+//         note-pass.textContent = "";
+//     }
+//     else {
+//         note-pass.textContent = "Must be alphabetic or numeric and length 8-20";
+//     }
+// })
+
+//Xử lý button Login
+var login = document.getElementById('login-login');
+
+// Chưa hoàn thành
+login.addEventListener("click", function () {
+    if (checkName(user.value)) {
+        noteUser.textContent = "";
     }
     else {
-        note__pass.textContent = "Must be alphabetic or numeric and length 8-20";
-        note__pass.style.color = "red";
+        noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
+    }
+    if (checkPass(pass.value)) {
+        notePass.textContent = "";
+    }
+    else {
+        notePass.textContent = "Must be alphabetic or numeric and length 8-20";
+    }
+    if (checkName(user.value) && checkPass(pass.value)) {
+        login.setAttribute('href', './admin.html');
     }
 })
