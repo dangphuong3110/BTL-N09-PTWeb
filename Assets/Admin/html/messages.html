@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../Libraries/css/aos.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../Libraries/css/reset.css">
+    <link rel="stylesheet" href="../../Fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="ti-menu"></i></button>
+    <div class="col-md-8">
+        <h1 class="top">
+          Creative 
+          <span class="text-end">CV</span>
+          <span class="text-end">For Admin</span>
+          <span class = "add">.</span>
+        </h1>
+      </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../../../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../html/admin.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Guide</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+              </ul>
+  
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a class="btn" id="btn-set" type="button">Settings</a>
+                <a class="btn" id="btn-logout" type="button" href="./login.html">LogOut</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        
+        <div class="image">
+            <img src="../../Images/Hinh-Anime-Thien-Nhien-Dep-Cute-Nhat.jpg" alt="">
+        </div>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Hello Admin!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Select your Option!</p>
+              <a type="button" class="btn btn-warning" href="./members.html">Members</a>
+              <a type="button" class="btn btn-warning" href="./posts.html">Posts</a>
+              
+              <a type="button" class="btn btn-warning" href="../../../index.html">About Us</a>
+            </div>
+          </div>
+  
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <table class="table">
+            <thead>
+              <tr class="top-table">
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+                <th scope="col">Method</th>
+                <th scope="col">Task</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">01</th>
+                <td>Nguyễn Văn A</td>
+                <td>nguyenvana@gmail.com</td>
+                <td>15-03-2022</td>
+                <td>Already seen</td>
+                <td>Gmail</td>
+            <td>
+            <div class="text-center">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Del
+                </button>   
+            </div>
+    
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+
+            <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">ID:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Position:</label>
+                <input type="text" class="form-control">
+              </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+            </div>
+            </div>
+            </div>
+            </div>
+    
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Delete Messages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+            <div class="modal-body">
+                <h5 class="text-body">Are you sure want to delete this messages ?</h5>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+            </div>
+                </div>
+              </div>
+            </div>
+    
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">02</th>
+                <td>Pham Minh H</td>
+                <td></td>
+                <td>29-01-2022</td>
+                <td>Already seen</td>
+                <td>Facebook</td>
+                <td> 
+                  <div class="text-center">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Del
+                    </button>
+                  </div>
+          
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">ID:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Name:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Position:</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Delete Messages</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                  <div class="modal-body">
+                      <h5 class="text-body">Are you sure want to delete this messages ?</h5>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+                  </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">03</th>
+                <td>Hoàng Manh K</td>
+                <td>hoangkhoa@gmail.com</td>
+                <td>30-11-2022</td>
+                <td>Not seen</td>
+                <td>Gmail</td>
+                <td>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Del
+                    </button>
+                  </div>
+          
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">ID:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Name:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Position:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Delete Messages</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                  <div class="modal-body">
+                      <h5 class="text-body">Are you sure want to delete this messages ?</h5>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+                  </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        <div class="container-row">
+            <div class="col mb-3">
+              <h3 class="logo">Copyright belong to team 9</h3>
+            </div>
+            <div class="col text-center footer-icon">
+              <i class="ti-facebook pe-2"></i>
+              <i class="ti-twitter-alt border-end border-start border-3 px-2"></i>
+              <i class="ti-youtube ps-2"></i>
+            </div>      
+        </div>
+
+    <script src="../js/admin.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/member.js"></script>
+    <script src="../../Libraries/js/aos.js"></script>
+    <script src="../../Libraries/js/bootstrap.bundle.js"></script>
+    <script src="../../Libraries/js/jqeuery.js"></script>
+    <script src="../../Libraries/js/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
