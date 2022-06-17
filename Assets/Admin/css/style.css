@@ -167,3 +167,14 @@
 .text-end{
     color: orange;
 }
+
+#btn-set,
+#btn-logout {
+    background-color: orange !important;
+    border-radius: 8px;
+}
+
+#btn-set:hover,
+#btn-logout:hover {
+    background-color: rgba(255, 166, 0, 0.795) !important;
+}
