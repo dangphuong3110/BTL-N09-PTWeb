@@ -1,3 +1,21 @@
+//State tài khoản cá nhân
+var account = {
+    accountItem: [
+        {
+            userName: 'adminphuong',
+            passWord: '11111111'
+        },
+        {
+            userName: 'adminhieu',
+            passWord: '11111111'
+        },
+        {
+            userName: 'adminthai',
+            passWord: '11111111'
+        }
+    ]
+}
+
 var loginPassword = document.getElementById('login-password');
 var loginContact = document.getElementById('login-contact');
 var loginForgot = document.getElementById('login-forgot');
@@ -48,15 +66,26 @@ login.addEventListener("click", function () {
     }
     else {
         noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
+        noteUser.style.color = 'red';
     }
     if (checkPass(pass.value)) {
         notePass.textContent = "";
     }
     else {
         notePass.textContent = "Must be alphabetic or numeric and length 8-20";
+        notePass.style.color = 'red';
     }
     if (checkName(user.value) && checkPass(pass.value)) {
-        login.setAttribute('href', './admin.html');
+        for (let i = 0; i < account.accountItem.length; i++) {
+            if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
+                login.setAttribute('href', './admin.html');
+                break;
+            }
+            else {
+                notePass.textContent = "Wrong account or password!";
+                notePass.style.color = 'rgb(212, 215, 8)';
+            }
+        }
     }
 })
 
@@ -73,9 +102,30 @@ loginEmail.addEventListener("change", function () {
     else {
         noteEmail.textContent = "Must have the string '@gmail.com' at the end";
         loginSubmit.classList.add('disabled');
+        noteEmail.style.color = 'red';
     }
 })
 
 loginSubmit.addEventListener("click", function () {
     alert('Success!');
-}) 
+})
+
+
+
+
+// var user = document.getElementById('userName');
+// var pass = document.getElementById('passWord');
+// var noteUser = document.getElementById('note-user');
+// var notePass = document.getElementById('note-pass');
+// for (let i = 0; i < account.accountItem.length; i++) {
+//     if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
+//         login.setAttribute('href', './admin.html');
+//         break;
+//     }
+//     else {
+//         notePass.textContent = "Wrong account or password!";
+//         notePass.style.color = 'rgb(212, 215, 8)';
+//     }
+// }
+
+console.log(account.accountItem);
