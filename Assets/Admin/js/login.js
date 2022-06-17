@@ -77,8 +77,9 @@ login.addEventListener("click", function () {
     }
     if (checkName(user.value) && checkPass(pass.value)) {
         for (let i = 0; i < account.accountItem.length; i++) {
-            if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
+            if (user.value == account.accountItem[i].userName && pass.value == account.accountItem[i].passWord) {
                 login.setAttribute('href', './admin.html');
+                notePass.textContent = "";
                 break;
             }
             else {
@@ -109,23 +110,3 @@ loginEmail.addEventListener("change", function () {
 loginSubmit.addEventListener("click", function () {
     alert('Success!');
 })
-
-
-
-
-// var user = document.getElementById('userName');
-// var pass = document.getElementById('passWord');
-// var noteUser = document.getElementById('note-user');
-// var notePass = document.getElementById('note-pass');
-// for (let i = 0; i < account.accountItem.length; i++) {
-//     if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
-//         login.setAttribute('href', './admin.html');
-//         break;
-//     }
-//     else {
-//         notePass.textContent = "Wrong account or password!";
-//         notePass.style.color = 'rgb(212, 215, 8)';
-//     }
-// }
-
-console.log(account.accountItem);
