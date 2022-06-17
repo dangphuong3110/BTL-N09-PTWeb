@@ -76,11 +76,11 @@ login.addEventListener("click", function () {
         notePass.style.color = 'red';
     }
     if (checkName(user.value) && checkPass(pass.value)) {
-        let dem = 0;
         for (let i = 0; i < account.accountItem.length; i++) {
-            if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
+            if (user.value == account.accountItem[i].userName && pass.value == account.accountItem[i].passWord) {
                 login.setAttribute('href', './admin.html');
-                dem++;
+                notePass.textContent = "";
+                break;
             }
             else {
                 notePass.textContent = "Wrong account or password!";
