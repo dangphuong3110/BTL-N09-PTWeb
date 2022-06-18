@@ -15,6 +15,42 @@ p{
     margin-bottom: 1rem;
 }
 
+section{
+    padding: 70px 0;
+    position: relative;
+    background: #fff;
+    padding-bottom: 0 !important;
+}
+
+.card{
+    padding: 8px 0;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.title{
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h4{
+    font-size: 1.7em;
+    line-height: 1.45em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+h5{
+    font-size: 1.57em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+
+strong{
+    font-weight: bolder !important;
+}
+
 /* NAVBAR  */
 .navbar.navbar-transparent{
     background-color: transparent !important;
@@ -203,7 +239,7 @@ nav ul li a:visited{
 }
 
 .button-container a:hover{
-    background-color: rgba(136, 136, 136,0.8);
+    background-color: rgba(136, 136, 136, 0.8);
 }
 
 .button-container .btn-default{
@@ -217,49 +253,19 @@ nav ul li a:visited{
 
 .btn-icon{
     padding: 0;
-    font-size: 0.9375rem;
+    font-size: 0.95rem;
     overflow: hidden;
     position: relative;
     line-height: normal;
 }
 
 /* ABOUT */
-.card{
-    padding: 8px 0;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
-    border-radius: 0.25rem;
-    overflow: hidden;
-}
-
-section{
-    padding: 70px 0;
-    position: relative;
-    background: #fff;
-    padding-bottom: 0 !important;
-}
-
-.title{
-    font-weight: 700;
-    line-height: 26px;
-}
-
-h4{
-    font-size: 1.714em;
-    line-height: 1.45em;
-    margin-bottom: 15px;
-    margin-top: 30px;
-}
-
 .mt-0{
     margin-top: 0 !important;
 }
 
 .card .card-body{
     min-height: 190px;
-}
-
-strong{
-    font-weight: bolder !important;
 }
 
 /* SKILLS */
@@ -273,8 +279,8 @@ strong{
   position: relative;
 }
 
-.progress-container.progress-primary .progress-value,
-.progress-container.progress-primary .progress-badge{
+.progress-container .progress-value,
+.progress-container .progress-badge{
   color: #378c3f;
 }
 
@@ -283,9 +289,9 @@ strong{
   text-transform: uppercase;
 }
 
-.progress-container.progress-primary .progress{
-  background: rgba(55,140,63,0.4);
-  height: 5px;
+.progress-container .progress{
+  background: rgba(55, 140, 63, 0.4);
+  height: 6px;
   font-size: 18px;
   border-radius: 0;
   box-shadow: none;
@@ -299,7 +305,7 @@ strong{
     font-size: 0.875em;
 }
 
-.progress-container.progress-primary .progress-bar{
+.progress-container .progress-bar{
     background: #378c3f;
     box-shadow: none;
 }
@@ -318,42 +324,29 @@ strong{
 }
 
 .ml-auto{
-    margin-left: auto!important;
+    margin-left: auto !important;
 }
 
 .mr-auto{
-    margin-right: auto!important;
-}
-
-.nav-pills.nav-pills-primary .nav-item .nav-link.active,
-.nav-pills.nav-pills-primary .nav-item .nav-link.active:focus{
-    background-color: #378c3f;
+    margin-right: auto !important;
 }
 
 .nav-pills .nav-item .nav-link.active,
 .nav-pills .nav-item .nav-link.active:focus{
-    background-color: #9a9a9a;
+    background-color: #378c3f;
     color: #fff;
     box-shadow: 0 5px 35px 0 rgb(0, 0, 0, 0.3);
 }
 
 .nav-pills .nav-item .nav-link{
     padding: 0 15.5px;
-    text-align: center;
     height: 60px;
     width: 60px;
     font-weight: 400;
     color: #9a9a9a;
     margin-right: 19px;
-    background-color: rgba(222,222,222,0.3);
+    background-color: rgba(222, 222, 222, 0.3);
     border-radius: 30px;
-}
-
-.nav-pills .nav-link,
-.nav-item .nav-link,
-.navbar,
-.nav-tabs .nav-link{
-    transition: all 300ms ease 0s;
 }
 
 .nav-pills .nav-item .nav-link{
@@ -368,7 +361,7 @@ strong{
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 0px 6px 30px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-image .effect{
@@ -379,7 +372,6 @@ strong{
 .portfolio-image figcaption{
     position: absolute;
     top: -10%;
-    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -397,6 +389,10 @@ strong{
     color: #fff;
 }
 
+.portfolio-image .content p{
+    text-transform: uppercase;
+}
+
 .portfolio-image:hover figcaption{
     opacity: 1;
     top: 0;
@@ -408,13 +404,14 @@ strong{
 }
 
 /* EXPERIENCE */
+#experience{
+    margin-top: 25px;
+}
+
 .bg-success{
     background-color: #378c3f !important;
     border-radius: 0.25rem;
-}
-
-#experience{
-    margin-top: 25px;
+    padding: 0;
 }
 
 .work-experience .work-experience-header{
@@ -424,13 +421,8 @@ strong{
     text-transform: uppercase;
 }
 
-h5{
-    font-size: 1.57em;
-    line-height: 1.4em;
-    margin-bottom: 15px;
-}
-
-.work-experience .card{
+.work-experience .card,
+.education .card{
     padding: 0;
     margin-bottom: 20px;
 }
@@ -439,11 +431,6 @@ h5{
     padding-top: 50px;
     text-align: center;
     color: #fff;
-}
-
-.education .card{
-    padding: 0;
-    margin-bottom: 20px;
 }
 
 .education h5{
@@ -466,8 +453,7 @@ h5{
 /* REFERENCES */
 #reference img{
     height: 120px;
-    width: auto;
-    max-width: 100%;
+    width: 120px;
 }
 
 #reference .card{
