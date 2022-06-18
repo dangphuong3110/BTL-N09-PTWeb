@@ -14,6 +14,7 @@ p{
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
 /* NAVBAR  */
 .navbar.navbar-transparent{
     background-color: transparent !important;
@@ -52,7 +53,7 @@ p{
     line-height: 26px;
 }
 
-.navbar-brand{
+.navbar-translate{
     font-size: 16px;
 }
 
@@ -124,9 +125,6 @@ nav ul li a:visited{
     margin-bottom: 85px;
 }
 
-.profile-image a{
-    position: relative;
-}
 
 .profile-image img{
     position: relative;
@@ -136,7 +134,7 @@ nav ul li a:visited{
     padding: 0;
     margin: 0;
     border: 15px solid transparent;
-    z-index: 1000;
+    z-index: 10;
     transition: all 0.3s ease-out;
 }
 
@@ -150,7 +148,6 @@ nav ul li a:visited{
 .content-center h2{
     font-size: 2.5rem;
     margin-bottom: 30px;
-    text-align: center;
     margin-top: 20px;
     font-weight: 700;
 }
@@ -175,7 +172,7 @@ nav ul li a:visited{
 .btn{
     border-width: 2px;
     font-weight: 400;
-    font-size: .8571em;
+    font-size: 0.875em;
     line-height: 1.35em;
     margin: 5px 1px;
     border: none;
@@ -206,7 +203,7 @@ nav ul li a:visited{
 }
 
 .button-container a:hover{
-    background-color: rgba(136, 136, 136,0.8)
+    background-color: rgba(136, 136, 136,0.8);
 }
 
 .button-container .btn-default{
@@ -215,7 +212,6 @@ nav ul li a:visited{
 
 .btn-icon.btn-lg{
     height: 3.6rem;
-    min-width: 3.6rem;
     width: 3.6rem;
 }
 
@@ -225,11 +221,6 @@ nav ul li a:visited{
     overflow: hidden;
     position: relative;
     line-height: normal;
-}
-
-.btn-round{
-    border-width: 1px;
-    border-radius: 30px !important;
 }
 
 /* ABOUT */
@@ -287,7 +278,7 @@ strong{
   color: #378c3f;
 }
 
-.progress-container .progress-badge {
+.progress-container .progress-badge{
   font-size: 0.875em;
   text-transform: uppercase;
 }
@@ -305,7 +296,7 @@ strong{
     position: absolute;
     top: 2px;
     right:0;
-    font-size: 0.85em;
+    font-size: 0.875em;
 }
 
 .progress-container.progress-primary .progress-bar{
