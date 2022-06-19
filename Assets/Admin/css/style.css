@@ -19,7 +19,7 @@
 .top{
     padding-left: 50px;
     font-size: 60px;
-    color: orange;
+    color: white;
 }
 
 .add{
@@ -160,13 +160,7 @@
     max-height: 490px;
 }
 
-.top{
-    color: black;
-}
 
-.text-end{
-    color: orange;
-}
 
 #btn-set,
 #btn-logout {
@@ -177,4 +171,8 @@
 #btn-set:hover,
 #btn-logout:hover {
     background-color: rgba(255, 166, 0, 0.795) !important;
+}
+
+#btn-logout{
+    color: white !important;
 }
