@@ -176,3 +176,12 @@
 #btn-logout{
     color: white !important;
 }
+
+.name{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 8px;
+    font-size: 25px;
+    color: white;
+    gap: 0.5rem;
+}
