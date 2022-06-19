@@ -5,15 +5,17 @@ html {
 body {
     width: 100%;
     height: 88%;
-    background-color: rgb(75, 74, 74);
-    /* background-repeat: no-repeat;
+    background: linear-gradient(rgba(66, 66, 66, 0.4), rgb(66, 66, 66, 0.2)), url(/Assets/Images/picture1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center !important; */
+    background-position: center !important;
+    color: black !important;
 }
 
 a {
     text-decoration: none;
 }
+
 
 #login {
     margin-top: 80px;
@@ -24,8 +26,8 @@ a {
 }
 
 #login .login-main {
-    box-shadow: 6px 6px 20px rgba(161, 161, 161, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 6px 6px 20px rgba(161, 161, 161, 0.5);
+    background-color: rgba(255, 255, 255, 0.373);
     margin-top: 20px;
     width: 80%;
     height: 100%;
@@ -73,7 +75,6 @@ img {
     box-sizing: content-box;
 }
 
-/* Tạm ẩn */
 #login #login-contact {
     display: block;
 }
@@ -89,6 +90,26 @@ img {
 
 #login-forgot:hover {
     color: rgb(255, 255, 255);
+}
+
+#login-login,
+#login-submit,
+#login-back {
+    background-color: orange;
+    border: 1px solid orange;
+    color: black;
+}
+
+#login-login:hover,
+#login-submit:hover,
+#login-back:hover {
+    background-color: rgba(255, 166, 0, 0.82);
+    border: 1px solid orange;
+    color: white;
+}
+
+#login-account:hover {
+    color: white;
 }
 
 /* Respoinsive */
@@ -120,7 +141,7 @@ img {
 /* Key frames */
 @keyframes colorBackground {
     0% {
-        color: greenyellow;
+        color: red;
     }
 
     30% {
@@ -128,11 +149,11 @@ img {
     }
 
     60% {
-        color: red;
+        color: blue;
     }
 
     100% {
-        color: white;
+        color: orange;
     }
 }
 

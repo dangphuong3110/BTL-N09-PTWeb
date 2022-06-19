@@ -67,6 +67,7 @@ login.addEventListener("click", function () {
     else {
         noteUser.textContent = "Incorrect account or password";
         noteUser.style.color = 'red';
+        noteUser.style.fontSize = '20px';
     }
     if (checkPass(pass.value)) {
         notePass.textContent = "";
@@ -74,6 +75,7 @@ login.addEventListener("click", function () {
     else {
         notePass.textContent = "Incorrect account or password";
         notePass.style.color = 'red';
+        notePass.style.fontSize = '20px';
     }
     if (checkName(user.value) && checkPass(pass.value)) {
         for (let i = 0; i < account.accountItem.length; i++) {
@@ -104,9 +106,15 @@ loginEmail.addEventListener("change", function () {
         noteEmail.textContent = "Must have the string '@gmail.com' at the end";
         loginSubmit.classList.add('disabled');
         noteEmail.style.color = 'red';
+        noteEmail.style.fontSize = '20px';
     }
 })
 
 loginSubmit.addEventListener("click", function () {
-    alert('Success!');
+    if (loginEmail.value.length === 0) {
+        alert('Unsuccess!');
+    }
+    else {
+        alert('Success!');
+    }
 })
