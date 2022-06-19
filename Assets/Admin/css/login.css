@@ -5,10 +5,10 @@ html {
 body {
     width: 100%;
     height: 88%;
-    background-image: url(../../Images/teamwork.jpg);
-    background-repeat: no-repeat;
+    background-color: rgb(75, 74, 74);
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center !important;
+    background-position: center !important; */
 }
 
 a {
@@ -24,8 +24,8 @@ a {
 }
 
 #login .login-main {
-    box-shadow: 6px 6px 20px rgba(40, 39, 39, 0.3);
-    background-color: rgba(125, 124, 124, 0.3);
+    box-shadow: 6px 6px 20px rgba(161, 161, 161, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
     margin-top: 20px;
     width: 80%;
     height: 100%;
@@ -84,11 +84,11 @@ img {
 
 #login-forgot {
     display: block;
-    color: rgb(36, 230, 56);
+    color: rgb(0, 0, 0);
 }
 
 #login-forgot:hover {
-    color: rgb(240, 239, 171);
+    color: rgb(255, 255, 255);
 }
 
 /* Respoinsive */
@@ -132,7 +132,7 @@ img {
     }
 
     100% {
-        color: blue;
+        color: white;
     }
 }
 

@@ -1,16 +1,21 @@
 body {
     position: relative;
     font-size: 16px !important;
-    color: white !important;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 
 a {
+    color: black !important;
     text-decoration: none;
-    color: black;
 }
 
-a:hover {
-    color: black;
+.text-nav {
+    text-decoration: none;
+    color: white !important;
+}
+
+.text-nav:hover {
+    color: black !important;
 }
 
 .navbar {
@@ -24,41 +29,40 @@ a:hover {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #ff4d29;
+    color: white;
 }
 
 .logo {
     font-family: system-ui;
     font-size: 40px;
     font-weight: 700;
+    color: white !important;
+
 }
 
-.logo span {
-    color: rgb(238, 121, 54);
-}
 
 /* BTN */
 .btn-brand {
     width: 150px;
-    background-color: rgb(238, 121, 54);
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
+    background-color: orange;
+    color: white !important;
+    font-weight: 600;
+    font-size: 19px;
 }
 
 .btn-brand:hover {
-    background-color: rgb(210, 105, 44);
-    color: white;
+    background-color: rgba(255, 166, 0, 0.932);
+    color: black !important;
     width: 150px;
 }
 
 /* Slider */
 #home {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 #home .carousel-inner p {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #home .img-slider {
@@ -68,9 +72,6 @@ a:hover {
 
 /* Member */
 
-#member {
-    background-color: rgb(221, 216, 216);
-}
 
 #member .img-member {
     width: 100%;
@@ -109,7 +110,6 @@ a:hover {
 .image .overlay {
     position: absolute;
     top: -10%;
-    left: 0;
     width: 100%;
     height: 168px;
     background-color: rgba(55, 140, 63, 0.8);
@@ -119,7 +119,7 @@ a:hover {
 
 .image .social-links {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.4s ease;
@@ -128,7 +128,7 @@ a:hover {
 
 .image:hover .overlay {
     opacity: 1;
-    top: 16px;
+    top: 1rem;
 }
 
 .image:hover .social-links {
@@ -139,7 +139,7 @@ a:hover {
 /* Contact */
 
 .numberphone:hover {
-    color: #ff4d29 !important;
+    color: #15601d !important;
 }
 
 /* Partner */
@@ -151,9 +151,7 @@ a:hover {
 
 
 /* About */
-#about {
-    background-color: rgb(221, 216, 216);
-}
+
 
 .about-image {
     width: 200px;
@@ -168,6 +166,8 @@ a:hover {
     width: 170px;
     height: 170px;
     border-radius: 50%;
+    border: 2px solid rgba(55, 140, 63);
+    padding: 0;
 }
 
 .about-image--item:hover {
@@ -195,6 +195,10 @@ a:hover {
 
 #footer .footer-icon .ti-youtube:hover {
     color: #EA4335;
+}
+
+.footer-numberphone:hover {
+    color: black !important;
 }
 
 .map {

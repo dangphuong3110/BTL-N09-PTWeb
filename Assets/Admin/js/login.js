@@ -65,14 +65,14 @@ login.addEventListener("click", function () {
         noteUser.textContent = "";
     }
     else {
-        noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
+        noteUser.textContent = "Incorrect account or password";
         noteUser.style.color = 'red';
     }
     if (checkPass(pass.value)) {
         notePass.textContent = "";
     }
     else {
-        notePass.textContent = "Must be alphabetic or numeric and length 8-20";
+        notePass.textContent = "Incorrect account or password";
         notePass.style.color = 'red';
     }
     if (checkName(user.value) && checkPass(pass.value)) {
