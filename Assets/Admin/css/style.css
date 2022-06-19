@@ -179,9 +179,9 @@
 
 .name{
     display: flex;
-    margin-left: 50px;
-    margin-top: 8px;
-    font-size: 25px;
+    margin-left: 450px;
+    margin-top: 5px;
+    font-size: 20px;
     color: white;
     gap: 0.5rem;
 }
