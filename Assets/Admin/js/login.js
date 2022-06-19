@@ -49,7 +49,6 @@ loginAccount.addEventListener("click", function () {
 
 var user = document.getElementById('userName');
 var pass = document.getElementById('passWord');
-var noteLoginUser = document.getElementById('note-user');
 var noteLoginPass = document.getElementById('note-pass');
 
 //Biểu thức chính quy của input userName
@@ -68,26 +67,23 @@ var login = document.getElementById('login-login');
 //Xử lý sự kiện click cho login
 login.addEventListener("click", function () {
     if (checkLoginName(user.value) || checkLoginPass(pass.value)) {
-        noteLoginUser.textContent = "";
-        noteLoginPass.textContent = "";
+        for (let i = 0; i < account.accountItem.length; i++) {
+            if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
+                login.setAttribute('href', './admin.html');
+                noteLoginPass.textContent = '';
+                break;
+            }
+            else {
+                noteLoginPass.textContent = "Incorrect account or password";
+                noteLoginPass.style.color = 'red';
+                noteLoginPass.style.fontSize = '20px';
+            }
+        }
     }
     else {
         noteLoginPass.textContent = "Incorrect account or password";
         noteLoginPass.style.color = 'red';
         noteLoginPass.style.fontSize = '20px';
-    }
-    if (checkName(user.value) && checkPass(pass.value)) {
-        for (let i = 0; i < account.accountItem.length; i++) {
-            if (user.value == account.accountItem[i].userName && pass.value == account.accountItem[i].passWord) {
-                login.setAttribute('href', './admin.html');
-                noteLoginPass.textContent = "";
-                break;
-            }
-            else {
-                noteLoginPass.textContent = "Wrong account or password!";
-                noteLoginPass.style.color = 'rgb(212, 215, 8)';
-            }
-        }
     }
 })
 
