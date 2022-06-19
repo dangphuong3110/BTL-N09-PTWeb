@@ -21,6 +21,7 @@ var loginContact = document.getElementById('login-contact');
 var loginForgot = document.getElementById('login-forgot');
 var loginSubmit = document.getElementById('login-submit');
 var loginBack = document.getElementById('login-back');
+var loginAccount = document.getElementById('login-account');
 
 // Sử lý display cho các phần forgot, back to login và submit
 loginForgot.addEventListener("click", function () {
@@ -37,56 +38,52 @@ loginBack.addEventListener("click", function () {
     loginPassword.style.display = 'none';
     loginContact.style.display = 'block';
 })
-
+loginAccount.addEventListener("click", function () {
+    createUser.value = "";
+    createPass.value = "";
+    createEmail.value = "";
+    createId.value = "";
+    createComfirm.value = "";
+})
 
 
 var user = document.getElementById('userName');
 var pass = document.getElementById('passWord');
-var noteUser = document.getElementById('note-user');
-var notePass = document.getElementById('note-pass');
+var noteLoginPass = document.getElementById('note-pass');
 
 //Biểu thức chính quy của input userName
-function checkName(userName) {
+function checkLoginName(userName) {
     var check = /^[A-Za-z0-9]{8,20}$/
     return check.test(userName);
 }
 
 //Biểu thức chính quy của input passWord
-function checkPass(password) {
+function checkLoginPass(password) {
     var check = /^[A-Za-z0-9]{8,20}$/;
     return check.test(password);
 }
 
 var login = document.getElementById('login-login');
-
 //Xử lý sự kiện click cho login
 login.addEventListener("click", function () {
-    if (checkName(user.value)) {
-        noteUser.textContent = "";
-    }
-    else {
-        noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
-        noteUser.style.color = 'red';
-    }
-    if (checkPass(pass.value)) {
-        notePass.textContent = "";
-    }
-    else {
-        notePass.textContent = "Must be alphabetic or numeric and length 8-20";
-        notePass.style.color = 'red';
-    }
-    if (checkName(user.value) && checkPass(pass.value)) {
+    if (checkLoginName(user.value) || checkLoginPass(pass.value)) {
         for (let i = 0; i < account.accountItem.length; i++) {
-            if (user.value == account.accountItem[i].userName && pass.value == account.accountItem[i].passWord) {
+            if (user.value === account.accountItem[i].userName && pass.value === account.accountItem[i].passWord) {
                 login.setAttribute('href', './admin.html');
-                notePass.textContent = "";
+                noteLoginPass.textContent = '';
                 break;
             }
             else {
-                notePass.textContent = "Wrong account or password!";
-                notePass.style.color = 'rgb(212, 215, 8)';
+                noteLoginPass.textContent = "Incorrect account or password";
+                noteLoginPass.style.color = 'red';
+                noteLoginPass.style.fontSize = '20px';
             }
         }
+    }
+    else {
+        noteLoginPass.textContent = "Incorrect account or password";
+        noteLoginPass.style.color = 'red';
+        noteLoginPass.style.fontSize = '20px';
     }
 })
 
@@ -97,16 +94,105 @@ var loginSubmit = document.getElementById('login-submit');
 var noteEmail = document.getElementById('note-email');
 loginEmail.addEventListener("change", function () {
     if (checkEmail.test(loginEmail.value)) {
-        noteEmail.textContent = "";
+        noteLoginEmail.textContent = "";
         loginSubmit.classList.remove('disabled');
     }
     else {
         noteEmail.textContent = "Must have the string '@gmail.com' at the end";
         loginSubmit.classList.add('disabled');
-        noteEmail.style.color = 'red';
+        noteLoginEmail.style.color = 'red';
+        noteLoginEmail.style.fontSize = '20px';
     }
 })
 
 loginSubmit.addEventListener("click", function () {
-    alert('Success!');
+    if (loginEmail.value.length === 0) {
+        alert('Unsuccess!');
+    }
+    else {
+        alert('Success!');
+    }
 })
+
+/* Js Create account */
+var createId = document.getElementById('create-id');
+var createEmail = document.getElementById('create-email');
+var createUser = document.getElementById('create-user');
+var createPass = document.getElementById('create-pass');
+var createComfirm = document.getElementById('create-comfirm');
+
+var noteId = document.getElementById('note-id');
+var noteEmail = document.getElementById('note-email');
+var noteUser = document.getElementById('note-user');
+var notePass = document.getElementById('note-pass');
+var noteComfirm = document.getElementById('note-comfirm');
+
+//Biểu thức chính quy
+var checkCreateId = /^[nv0-9]{8}$/;
+var checkCreateEmail = /^([a-zA-Z0-9]+)@gmail\.com$/;
+var checkCreateUser = /^[A-Za-z0-9]{8,20}$/;
+var checkCreatePass = /^[A-Za-z0-9]{8,20}$/;
+var checkCreateComfirm = /^[A-Za-z0-9]{8,20}$/;
+
+//Xử lý sự kiện
+var btnSuccess = document.getElementById('btn-success');
+createId.addEventListener('change', function () {
+    if (checkId.test(createId.value)) {
+        noteId.textContent = "";
+    }
+    else {
+        noteId.textContent = "Must have beginning 'nv' and length 8";
+        noteId.style.color = "red";
+    }
+})
+createEmail.addEventListener('change', function () {
+    if (checkCreateEmail.test(createEmail.value)) {
+        noteEmail.textContent = "";
+    }
+    else {
+        noteEmail.textContent = "Must have the string '@gmail.com' at the end";
+        noteEmail.style.color = "red";
+    }
+})
+createUser.addEventListener('change', function () {
+    if (checkCreateUser.test(createUser.value)) {
+        noteUser.textContent = "";
+    }
+    else {
+        noteUser.textContent = "Must be alphabetic or numeric and length 8-20";
+        noteUser.style.color = "red";
+
+    }
+})
+createPass.addEventListener('change', function () {
+    if (checkCreatePass.test(createPass.value)) {
+        notePass.textContent = "";
+    }
+    else {
+        notePass.textContent = "Must be alphabetic or numeric and length 8-20";
+        notePass.style.color = "red";
+    }
+})
+createComfirm.addEventListener('change', function () {
+    if (checkCreateComfirm.test(createComfirm.value)) {
+        noteComfirm.textContent = "";
+    }
+    else {
+        noteComfirm.textContent = "Must be alphabetic or numeric and length 8-20";
+        noteComfirm.style.color = "red";
+    }
+})
+btnSuccess.addEventListener("click", function () {
+    if (createPass.value !== createComfirm.value) {
+        noteComfirm.textContent = "No match"
+        noteComfirm.style.color = "yellow";
+    }
+    else if (checkId.test(createId.value) === false || checkEmail.test(createEmail.value) === false || checkUser.test(createUser.value) === false || checkPass.test(createPass.value) === false) {
+        alert('Unsuccess!');
+    }
+    else {
+        alert('Success!');
+    }
+})
+
+

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../../Fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="../../Libraries/css/aos.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <script src="../../Libraries/js/aos.js"></script>
 </head>
 
@@ -25,7 +26,7 @@
                     <h1 class="h1">Creative CV</h1>
                     <h3 class="h3" id="paragraph">Login admin account</h3>
                 </div>
-                <div class="col-sm-8 border-start" id="login-contact">
+                <div class="col-sm-8" id="login-contact">
                     <div class="col-md">
                         <h1 class="h1">Login</h1>
                         <div class="col col-image">
@@ -34,38 +35,99 @@
 
                     </div>
                     <div class="col-md login-information">
-                        <div class="input-group flex-nowrap input-group-lg my-3 col-md">
+                        <div class="input-group flex-nowrap input-group-lg mt-3 col-md">
                             <span class="input-group-text" id="addon-wrapping"><i class="ti-user"></i></span>
                             <input type="text" class="form-control" id="userName" placeholder="Username"
                                 aria-label="Username" aria-describedby="addon-wrapping">
-
                         </div>
-                        <p id="note-user" class="text-start"></p>
                     </div>
                     <div class="col-md login-information">
-                        <div class="input-group flex-nowrap input-group-lg mt-3 col-md">
+                        <div class="input-group flex-nowrap input-group-lg col-md">
                             <span class="input-group-text" id="addon-wrapping"><i class="ti-unlock"></i></span>
                             <input type="password" id="passWord" class="form-control" placeholder="Password"
                                 aria-label="Password" aria-describedby="addon-wrapping">
                             <br>
                         </div>
-                        <p id="note-pass" class="text-start"></p>
+                        <p id="note-pass" class="text-lg-start my-1"></p>
                     </div>
                     <div class="col-md">
                         <div class="col-4">
                             <a class="text-start h5" id="login-forgot" href="#">Forgot password?<br></a>
                         </div>
-                        <a href="#" class="btn btn-primary btn-lg my-3" id="login-login">Login</a>
-                        <p class="message mb-3 h5 login-create">Not registered? <a href="./create.html">Create an
-                                account</a></p>
+                        <a href="#" id="login-login" class="btn btn-lg my-3">Login</a>
+                        <p class="message mb-3 h5 login-create">Not registered?
+                            <a id="login-account" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
+                                an account
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-sm-8 border-start" id="login-password">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h5 class="modal-title h4" id="exampleModalLabel">Create Account
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-start">
+                                <div class="row create-information">
+                                    <p class="h5">Admin staff id:<br></p>
+                                    <div class="input-group flex-nowrap">
+                                        <input id="create-id" type="text" class="form-control mb-2"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                    <p id="note-id"></p>
+                                </div>
+                                <div class="row create-information">
+                                    <p class="h5">Email:<br></p>
+                                    <div class="input-group flex-nowrap">
+                                        <input id="create-email" type="email" class="form-control mb-2"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                    <p id="note-email"></p>
+                                </div>
+                                <div class="row create-information">
+                                    <p class="h5">Username:<br></p>
+                                    <div class="input-group flex-nowrap">
+                                        <input id="create-user" type="text" class="form-control mb-2"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                    <p id="note-user"></p>
+                                </div>
+                                <div class="row create-information">
+                                    <p class="h5">Password:<br></p>
+                                    <div class="input-group flex-nowrap">
+                                        <input id="create-pass" type="password" class="form-control mb-2"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                    <p id="note-pass"></p>
+                                </div>
+                                <div class="row create-information">
+                                    <p class="h5">Comfirm password:<br></p>
+                                    <div class="input-group flex-nowrap">
+                                        <input id="create-comfirm" type="password" class="form-control mb-2"
+                                            aria-describedby="addon-wrapping">
+                                    </div>
+                                    <p id="note-comfirm"></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btn-success" type="button" class="btn btn-primary">Create your
+                                    account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8" id="login-password">
                     <div class="col-md">
                         <h1 class="h1">Enter email</h1>
                     </div>
                     <div class="col-md">
-                        <div class="input-group flex-nowrap input-group-lg my-3 col-md">
+                        <div class="input-group flex-nowrap input-group-lg mt-3 col-md">
                             <span class="input-group-text" id="addon-wrapping"><i class="ti-email"></i></span>
                             <input type="email" id="login-email" class="form-control" placeholder="email"
                                 aria-label="email" aria-describedby="addon-wrapping">
