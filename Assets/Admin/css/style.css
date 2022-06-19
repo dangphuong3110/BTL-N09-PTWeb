@@ -28,8 +28,9 @@
 }
 
 .navbar-brand{
-    font-size: 25px;
+    font-size: 45px;
     color: white;
+    padding: 12px;
 }
 
 .nav-item{
@@ -179,7 +180,7 @@
 
 .name{
     display: flex;
-    margin-left: 450px;
+    margin-left: 1200px;
     margin-top: 5px;
     font-size: 20px;
     color: white;
