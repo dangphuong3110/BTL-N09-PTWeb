@@ -97,18 +97,20 @@ img {
 
 #login-login,
 #login-submit,
-#login-back {
+#login-back,
+#btn-success {
     background-color: orange;
     border: 1px solid orange;
-    color: black;
+    color: #ffffff;
 }
 
 #login-login:hover,
 #login-submit:hover,
-#login-back:hover {
+#login-back:hover,
+#btn-success:hover {
     background-color: rgba(255, 166, 0, 0.82);
     border: 1px solid orange;
-    color: white;
+    color: black;
 }
 
 #login-account,
@@ -119,6 +121,14 @@ img {
 #login-account:hover,
 #login-forgot:hover {
     color: black;
+}
+
+.modal-title {
+    margin: 0 auto;
+}
+
+.btn-close {
+    margin: 0 !important;
 }
 
 /* Respoinsive */
