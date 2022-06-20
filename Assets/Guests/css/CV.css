@@ -140,6 +140,12 @@ nav ul li a:visited {
     margin-left: 16px;
 }
 
+@media only screen and (max-width: 992px) {
+    .nav-item {
+        margin-left: 16px;
+    }
+}
+
 /* HOME */
 .bg-cover {
     background-position: center !important;
