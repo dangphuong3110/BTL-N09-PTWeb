@@ -26,7 +26,6 @@ a {
 }
 
 .logo {
-    font-family: system-ui;
     font-size: 30px;
     color: white !important;
 }
@@ -225,5 +224,12 @@ a {
 
     .para {
         text-align: center;
+    }
+}
+
+@media (max-width: 280px) {
+    .logo {
+        font-size: 20px;
+        color: white !important;
     }
 }
