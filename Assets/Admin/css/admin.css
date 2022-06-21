@@ -43,6 +43,11 @@ html{
     max-height: 490px;
 }
 
+.profile img{
+    width: 100%;
+    height: 200px;
+}
+
 
 /* navbar  */
 .bg-success{
