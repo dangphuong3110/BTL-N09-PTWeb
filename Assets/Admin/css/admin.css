@@ -6,6 +6,10 @@ body{
     font-family: montserrat,helvetica neue,Arial,sans-serif !important;
 }
 
+html{
+    /* overflow: hidden; */
+}
+
 /* section */
 .bg-cover{
     background-position: center !important;
@@ -41,6 +45,9 @@ body{
 
 
 /* navbar  */
+.bg-success{
+    background-color: #378c3f !important;
+}
 
 .navbar-nav{
     margin-right: 30px;
@@ -66,42 +73,19 @@ body{
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 992px){
-    .nav-item{
-        margin-top: 20px;
-    }
-    .nav-item + .nav-item{
-        margin-left: 0px;
-    }
-}
-
 .navbar-brand{
-    font-size: 45px !important;
-    color: white;
-    padding: 12px;
-    font-weight: 700;
+    font-size: 30px;
+    color: white !important;
 }
 
 .nav-item{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .nav-link{
     color: white;
 }
 
-
-.container-fluid{
-    margin-left: 10px;
-}
-
-/* reset */
-*{ 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-}
 
 /* button */
 
@@ -118,7 +102,6 @@ body{
 
 .btn.btn-info{
     border-radius: 8px;
-    
 }
 
 .btn.btn-secondary{
@@ -134,16 +117,9 @@ body{
     margin-top: 40px;
 }
 
-.btn.btn-outline-success{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-}
-
 .btn-add{
     margin-top: 40px;
-    margin-left: 300px;
-    
+    margin-left: 0px;
     border-radius: 8px;
 }
 
@@ -153,14 +129,18 @@ body{
 }
 
 #btn-logout:hover {
-    background-color: rgba(138, 91, 4, 0.795) !important;
+    background-color: rgba(255, 165, 0, 0.82);
+    color: black !important;
+    border: none;
 }
 
 #btn-logout{
-    color: white !important;
-    margin-top: 3px ;
-    border-radius: 8px;
-    background-color: rgb(238,121,54);
+    width: 150px;
+    color: #ffffff !important;
+    padding: 6px 12px;
+    border: none;
+    font-size: 19px;
+    background-color: orange;
 }
 
 .add-member{
@@ -183,11 +163,6 @@ body{
     font-size: 25px;
 }
 
-.table-messages{
-    overflow-x:scroll;
-    /* overflow: scroll; */
-}
-
 /* Fotter */
 
 footer{
@@ -195,13 +170,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
 }
-
-.container{
-    margin-top: 30px;
-}
-
 
 .footer-icon{
     font-size: 35px;
@@ -246,14 +216,6 @@ footer{
     font-size: 30px;
 }
 
-/* .name{
-    font-size: 25px;
-    color: white;
-    margin-top: 5px;
-    gap: 0.5rem;
-    margin-left: 775px;
-} */
-
 .facebook:hover{
     color: #3b5998;
 }
@@ -272,11 +234,11 @@ footer{
     color:orangered;
 }
 
-.d-flex{
+/* .d-flex{
     margin-top: 30px;
     margin-left: 800px;
     margin-right: 800px;
-}
+} */
 
 .text-body{
     text-align: center;
@@ -287,8 +249,11 @@ footer{
     text-align: left;
 }
 
-.container{
-    margin-top: 30px;
+@media screen and (max-width: 992px){
+    .nav-item{
+        margin-top: 20px;
+    }
+    .nav-item + .nav-item{
+        margin-left: 0px;
+    }
 }
-
-
