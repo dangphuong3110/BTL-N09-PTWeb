@@ -25,9 +25,6 @@
               <a class="nav-link" href="../../../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./members.html">Members</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="./profiles.html">Profiles</a>
             </li>
             <li class="nav-item">
@@ -74,7 +71,7 @@
                   <input type="text" class="form-control">
                 </div>
                 <div class="mb-3">
-                  <label class="form-label">Name:</label>
+                  <label class="form-label">Category:</label>
                   <input type="text" class="form-control">
                 </div>
               </form>
@@ -92,7 +89,7 @@
     <thead>
       <tr class="top-table">
         <th scope="col">ID</th>
-        <th scope="col">Name</th>
+        <th scope="col">Category</th>
         <th scope="col">Tasks</th>
       </tr>
     </thead>
@@ -109,34 +106,58 @@
               Del
             </button>   
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Edit Portifolios</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                   </div>
-          <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label class="form-label">ID:</label>
-                  <input type="text" class="form-control">
-                </div>
-              </form>
-            <form>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+            <div class="modal-body">
               <div class="mb-3">
-                <label class="form-label">Name:</label>
+                <label class="form-label">Category:</label>
                 <input type="text" class="form-control">
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+              <div class="mb-3">
+                <label class="form-label">Content image 1:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Choose file image 1:</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Content image 2:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Choose file image 2:</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Content image 3:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Choose file image 3:</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Content image 4:</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Choose file image 4:</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+            </div>
+                </div>
+              </div>
+            </div>
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -169,54 +190,21 @@
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Del
             </button>   
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Portifolios</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                   </div>
-          <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label class="form-label">ID:</label>
-                  <input type="text" class="form-control">
-                </div>
-              </form>
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Name:</label>
-                <input type="text" class="form-control">
-              </div>
-            </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+        </td>
+      </tr>
+      <tr class="table-success">  
+        <td>03</td>
+        <td>Photography</td>
+        <td>
+          <div class="text-center">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Edit
+            </button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Del
+            </button>   
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Delete Portifolios</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    <div class="modal-body">
-        <h5 class="text-body">Are you sure want to delete this portifolios ?</h5>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
-    </div>
-        </div>
-      </div>
-    </div>
-        </div>
         </td>
       </tr>
     </tbody>
