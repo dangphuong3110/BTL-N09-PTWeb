@@ -49,8 +49,8 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <button type="button" class="btn btn-info btn-add" data-toggle="modal" data-target="#myModal">
-            Add Portifolios
+          <button type="button" class="btn btn-outline-success btn-add" data-toggle="modal" data-target="#myModal">
+            Add Portifolio
           </button>
         </div>
       </div>
@@ -61,31 +61,31 @@
          <div class="modal-content">
           
             <div class="modal-header">
-               <h4 class="modal-title">ADD PORTIFOLIOS</h4>
+               <h4 class="modal-title">ADD PORTIFOLIO</h4>
             </div>
             
             <div class="modal-body">
               <form>
                 <div class="mb-3">
                   <label class="form-label">ID:</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control add-id-portfolio">
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Category:</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control add-category-portfolio">
                 </div>
               </form>
             </div>
            
             <div class="modal-footer">
                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-info" data-dismiss="modal">Add</button>
+               <button type="button" class="btn btn-info btn-add-portfolio" data-dismiss="modal">Add</button>
             </div>
          </div>
       </div>
    </div>
 
-  <table class="table table-hover">
+  <table class="table table-striped table-hover">
     <thead>
       <tr class="top-table">
         <th scope="col">ID</th>
@@ -94,23 +94,23 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="table-success">         
+      <tr>         
         <td>01</td>
         <td>Web Developer</td>
         <td>
           <div class="text-center">
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal1">
               Edit
             </button>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
               Del
             </button>   
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Portifolios</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Portifolio</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
             <div class="modal-body">
@@ -159,11 +159,11 @@
               </div>
             </div>
 
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Delete Portifolios</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">Delete Portifolio</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
     <div class="modal-body">
@@ -184,26 +184,166 @@
         <td>Graphic Design</td>
         <td>
           <div class="text-center">
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">
               Edit
             </button>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
               Del
-            </button>   
+            </button>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Portifolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label class="form-label">Category:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 1:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 1:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 2:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 2:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 3:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 3:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 4:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 4:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+                </div>
+                    </div>
+                  </div>
+                </div>
+    
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete Portifolio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this portifolios ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div>   
           </div>
         </td>
       </tr>
-      <tr class="table-success">  
+      <tr>  
         <td>03</td>
         <td>Photography</td>
         <td>
           <div class="text-center">
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal3">
               Edit
             </button>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
               Del
-            </button>   
+            </button>  
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Portifolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label class="form-label">Category:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 1:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 1:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 2:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 2:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 3:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 3:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Content image 4:</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Choose file image 4:</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
+                </div>
+                    </div>
+                  </div>
+                </div>
+    
+        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete Portifolio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body">
+            <h5 class="text-body">Are you sure want to delete this portifolios ?</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
+        </div>
+            </div>
+          </div>
+        </div> 
           </div>
         </td>
       </tr>
@@ -233,7 +373,7 @@
   </footer>
 
     
-    <script src="../js/admin.js"></script>
+    <script src="../js/portfolios.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
