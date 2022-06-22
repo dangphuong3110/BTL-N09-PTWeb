@@ -6,8 +6,8 @@ let addCategoryPortfolio = document.querySelector('.add-category-portfolio');
 let btnAddPortfolio = document.querySelector('.btn-add-portfolio');
 var index2 = 4;
 
-btnAddPortfolio.addEventListener('click', function(){
-    if(addIdPortfolio.value != "" && addCategoryPortfolio.value != ""){
+btnAddPortfolio.addEventListener('click', function () {
+    if (addIdPortfolio.value != "" && addCategoryPortfolio.value != "") {
         btnAddPortfolio.setAttribute('data-dismiss', 'modal');
         var row = tablePortfolio.insertRow(-1);
         var cellId = row.insertCell(0);
@@ -16,14 +16,14 @@ btnAddPortfolio.addEventListener('click', function(){
         cellId.innerHTML = addIdPortfolio.value;
         cellCategory.innerHTML = addCategoryPortfolio.value;
         cellED.innerHTML = `<div class="text-center">
-                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal`+index2+`">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal`+ index2 + `">
                 Edit
                 </button>
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop`+index2+`">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop`+ index2 + `">
                 Del
                 </button>   
 
-            <div class="modal fade" id="exampleModal`+index2+`" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal`+ index2 + `" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -76,7 +76,7 @@ btnAddPortfolio.addEventListener('click', function(){
                 </div>
                 </div>
 
-            <div class="modal fade" id="staticBackdrop`+index2+`" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop`+ index2 + `" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
@@ -94,11 +94,11 @@ btnAddPortfolio.addEventListener('click', function(){
             </div>
             </div>
             </div>`;
-            ++index2;
+        ++index2;
         addIdPortfolio.value = "";
         addCategoryPortfolio.value = "";
     }
-    else{
+    else {
         btnAddPortfolio.setAttribute('data-dismiss', '');
         alert("Please fill out field");
     }
