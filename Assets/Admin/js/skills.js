@@ -16,60 +16,64 @@ btnAddSkill.addEventListener('click', function () {
     cellName.innerHTML = addNameSkill.value;
     cellLevel.innerHTML = addLevelSkill.value;
     cellED.innerHTML = `<div class="text-center">
-        <button type="button" class="btn btn-info btn-edit-skill" data-bs-toggle="modal" data-bs-target="#exampleModal`+ index2 + `">
-          Edit
-        </button>
-        <button type="button" class="btn btn-danger btn-delete-skill" data-bs-toggle="modal" data-bs-target="#staticBackdrop`+ index2 + `">
-          Del
-        </button>   
+                            <button type="button" class="btn btn-info btn-edit-skill" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal`+index2+`">
+                            Edit
+                            </button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop`+index2+`">
+                            Del
+                            </button>
 
-        <div class="modal fade" id="exampleModal`+ index2 + `" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Edit Skill</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Name:</label>
-            <input type="text" class="form-control">
-          </div>
-        </form>
-        <form>
-            <div class="mb-3">
-              <label class="form-label">Level:</label>
-              <input type="text" class="form-control">
-            </div>
-          </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+                            <div class="modal fade" id="exampleModal`+index2+`" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Edit Skill</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Name:</label>
+                                        <input type="text" class="form-control input-name-skill">
+                                    </div>
+                                    </form>
+                                    <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Level:</label>
+                                        <input type="text" class="form-control input-level-skill">
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info btn-save-skill" data-bs-dismiss="modal">Save
+                                    changes</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
 
-<div class="modal fade" id="staticBackdrop`+ index2 + `" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Delete Skill</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-<div class="modal-body">
-    <h5 class="text-body">Are you sure want to delete this skill ?</h5>
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Delete</button>
-</div>
-    </div>
-  </div>
-</div>
-    </div>`;
+                            <div class="modal fade" id="staticBackdrop`+index2+`" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Delete Skill</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="text-body">Are you sure want to delete this skill ?</h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info btn-delete-skill" data-bs-dismiss="modal">Delete</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>`;
     ++index2;
     addNameSkill.value = "";
     addLevelSkill.value = "";
