@@ -155,6 +155,10 @@ html{
 
 
 /* table */
+.table th,
+.table td{
+    border: 0.5px solid black;
+}
 
 .table{
   padding-left: 0;
