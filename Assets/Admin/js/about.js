@@ -5,8 +5,8 @@ let addKeyAbout = document.querySelector('.add-key-about');
 let addInformationAbout = document.querySelector('.add-information-about');
 let btnAddAbout = document.querySelector('.btn-add-about');
 var index2 = 8;
-btnAddAbout.addEventListener('click', function(){
-    if(addKeyAbout.value != "" && addInformationAbout.value != ""){
+btnAddAbout.addEventListener('click', function () {
+    if (addKeyAbout.value != "" && addInformationAbout.value != "") {
         btnAddAbout.setAttribute('data-dismiss', 'modal');
         var row = tableAbout.insertRow(-1);
         var cellKey = row.insertCell(0);
@@ -15,14 +15,14 @@ btnAddAbout.addEventListener('click', function(){
         cellKey.innerHTML = addKeyAbout.value;
         cellInformation.innerHTML = addInformationAbout.value;
         cellED.innerHTML = `<div class="text-center">
-                                <button type="button" class="btn btn-info btn-edit-about" data-bs-toggle="modal" data-bs-target="#exampleModal`+index2+`">
+                                <button type="button" class="btn btn-info btn-edit-about" data-bs-toggle="modal" data-bs-target="#exampleModal`+ index2 + `">
                                     Edit
                                 </button>
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop`+index2+`">
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop`+ index2 + `">
                                     Del
                                 </button>   
 
-                                <div class="modal fade" id="exampleModal`+index2+`" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal`+ index2 + `" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -51,7 +51,7 @@ btnAddAbout.addEventListener('click', function(){
                                     </div>
                                 </div>
 
-                                <div class="modal fade" id="staticBackdrop`+index2+`" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal fade" id="staticBackdrop`+ index2 + `" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -73,7 +73,7 @@ btnAddAbout.addEventListener('click', function(){
         addKeyAbout.value = "";
         addInformationAbout.value = "";
     }
-    else{
+    else {
         btnAddAbout.setAttribute('data-dismiss', '');
         alert("Please fill out field");
     }
@@ -87,12 +87,12 @@ let btnSaveAbout = document.querySelectorAll('.btn-save-about');
 let keyAbout = document.querySelectorAll('.key-about');
 let informationAbout = document.querySelectorAll('.information-about');
 
-for(let i=0; i<keyAbout.length; i++){
-    btnEditAbout[i].addEventListener('click', function(){
+for (let i = 0; i < keyAbout.length; i++) {
+    btnEditAbout[i].addEventListener('click', function () {
         inputKeyAbout[i].value = keyAbout[i].textContent;
         inputInformationAbout[i].value = informationAbout[i].textContent;
     });
-    btnSaveAbout[i].addEventListener('click', function(){
+    btnSaveAbout[i].addEventListener('click', function () {
         keyAbout[i].textContent = inputKeyAbout[i].value;
         informationAbout[i].textContent = inputInformationAbout[i].value;
     });
@@ -101,14 +101,15 @@ for(let i=0; i<keyAbout.length; i++){
 //Delete about:
 let btnDeleteAbout = document.querySelectorAll('.btn-delete-about');
 
-for(let i=0; i<keyAbout.length; i++){
-    btnDeleteAbout[i].addEventListener('click', function(){
+for (let i = 0; i < keyAbout.length; i++) {
+    btnDeleteAbout[i].addEventListener('click', function () {
         var index;
-        for(let j=0; j<tableAbout.rows.length; j++)
-            if(tableAbout.rows[j].cells[0].textContent == keyAbout[i].textContent){
+        for (let j = 0; j < tableAbout.rows.length; j++)
+            if (tableAbout.rows[j].cells[0].textContent == keyAbout[i].textContent) {
                 index = j;
                 break;
             }
         tableAbout.deleteRow(index);
     });
 };
+
